@@ -283,6 +283,63 @@ footer{color:var(--dim);border-top:1px solid var(--line)}
 .m-chip:before{content:"";display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--ac);margin-right:8px;vertical-align:middle}
 .c1{left:10%;top:4%}.c2{left:-4%;top:46%}.c3{right:0;top:52%}.c4{left:6%;top:24%}
 @media(max-width:560px){.m-rol{width:130px;padding:10px}.m-rol svg{width:90px;height:90px}.m-chat{width:190px}.m-seal{width:96px;height:96px}.m-seal b{font-size:26px}.c2,.c4{display:none}.c1{top:0;left:2%}}
+
+/* demo animada no celular */
+.screen.dm{padding:0;display:block;min-height:0;overflow:hidden;gap:0}
+.demo{--fs:14px;font-size:var(--fs);position:relative;width:100%;height:36em;overflow:hidden}
+.scn{position:absolute;inset:0;padding:1.5em 1.15em 2.4em;display:flex;flex-direction:column;gap:.75em;opacity:0;transform:translateX(14%);transition:opacity .45s,transform .6s cubic-bezier(.2,.8,.2,1);pointer-events:none}
+.scn.on{opacity:1;transform:none}
+.scn.out{opacity:0;transform:translateX(-14%)}
+.d-h{display:flex;justify-content:space-between;align-items:baseline}
+.d-h b{font-size:1em;letter-spacing:-.01em}.d-h small{font-size:.75em;color:var(--ink2)}
+.d-big{font-family:'Instrument Serif',serif;font-style:italic;font-size:2.3em;line-height:1;color:var(--g2)}
+.d-g{display:grid;grid-template-columns:repeat(7,1fr);gap:.28em}
+.d-g .w{font-style:normal;font-size:.62em;color:var(--ink2);text-align:center;font-weight:600}
+.d-g span{aspect-ratio:1/1.2;border-radius:.55em;background:#fff;border:1px solid #E4E6E1;font-size:.72em;font-weight:700;padding:.3em 0 0;display:flex;flex-direction:column;align-items:center;gap:.15em;transition:background .25s,color .25s,border-color .25s,transform .25s}
+.d-g span em{font-style:normal;font-size:1.25em;line-height:1;opacity:0;transform:scale(.2);transition:opacity .3s,transform .45s cubic-bezier(.3,1.7,.5,1)}
+.d-g.pop span em{opacity:1;transform:none}
+.d-g span.hit{background:#0C0C0D;color:#fff;border-color:var(--ac);transform:scale(1.08)}
+.d-card{margin-top:auto;background:#0C0C0D;color:#F3F2EF;border-radius:1.1em;padding:1em;display:flex;flex-direction:column;gap:.4em;transform:translateY(130%);transition:transform .55s cubic-bezier(.2,.9,.25,1.1)}
+.d-card.show{transform:none}
+.d-card .k{font-size:.62em;font-weight:700;letter-spacing:.12em;color:var(--ac)}
+.d-card p{font-size:1.2em;font-weight:800;letter-spacing:-.02em}
+.d-btn,.d-copy{display:block;text-align:center;padding:.75em;border-radius:.8em;font-weight:700;font-size:.85em;transition:transform .15s,background .25s,color .25s}
+.d-btn{background:var(--ac);color:#06130D}
+.d-btn.press,.d-copy.press{transform:scale(.94)}
+.d-pill{align-self:flex-start;font-size:.7em;font-weight:700;padding:.35em .9em;border-radius:99px;background:#E3E7E1;color:var(--ink2)}
+.d-bub{background:#E7F8EF;border:1px solid #BFEBD3;border-radius:1.1em 1.1em 1.1em .3em;padding:.9em;font-size:.8em;line-height:1.5;white-space:pre-wrap;flex:1;overflow:hidden}
+.caret{display:inline-block;width:2px;height:1.1em;background:var(--g2);vertical-align:-.2em;margin-left:1px;animation:blink .8s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
+.d-copy{background:#0C0C0D;color:#fff}
+.d-copy.ok{background:var(--ac);color:#06130D}
+.s3{padding:0 0 2.4em;gap:0;background:#ECE5DD}
+.wa-h{display:flex;align-items:center;gap:.6em;background:#075E54;color:#fff;padding:1.4em 1em .8em}
+.wa-h i{width:2.3em;height:2.3em;border-radius:50%;background:var(--ac);color:#06130D;display:grid;place-items:center;font-style:normal;font-weight:800;font-size:.75em}
+.wa-h b{display:block;font-size:.9em}.wa-h small{font-size:.7em;opacity:.8}
+.wa-c{flex:1;display:flex;flex-direction:column;gap:.5em;padding:.9em .8em}
+.wo,.wi{max-width:86%;padding:.55em .7em .4em;border-radius:.8em;font-size:.76em;line-height:1.4;box-shadow:0 1px 1px rgba(0,0,0,.08);opacity:0;transform:translateY(.8em) scale(.96);transition:opacity .3s,transform .4s cubic-bezier(.2,.9,.3,1.2)}
+.wo{align-self:flex-end;background:#D9FDD3;border-top-right-radius:.2em}
+.wi{align-self:flex-start;background:#fff;border-top-left-radius:.2em}
+.wi b{display:block;font-size:.9em}
+.wo small,.wi small{display:block;text-align:right;font-size:.75em;color:#667781;margin-top:.15em}
+.wo.in,.wi.in{opacity:1;transform:none}
+.wa-t{position:absolute;left:.8em;right:.8em;bottom:2.6em;background:#0C0C0D;color:#fff;border-radius:.9em;padding:.75em;text-align:center;font-size:.8em;font-weight:700;opacity:0;transform:translateY(1em);transition:.45s cubic-bezier(.2,.9,.3,1.2)}
+.wa-t.in{opacity:1;transform:none}
+.tap{position:absolute;z-index:5;left:70%;top:110%;width:2.4em;height:2.4em;margin:-1.2em 0 0 -1.2em;border-radius:50%;background:rgba(61,220,151,.35);border:2px solid var(--g2);box-shadow:0 .3em .8em rgba(0,0,0,.25);transition:left .7s cubic-bezier(.4,0,.2,1),top .7s cubic-bezier(.4,0,.2,1),transform .15s;pointer-events:none}
+.tap.press{transform:scale(.75)}
+.d-dots{position:absolute;left:0;right:0;bottom:.9em;display:flex;justify-content:center;gap:.35em;z-index:6}
+.d-dots i{width:.45em;height:.45em;border-radius:99px;background:rgba(0,0,0,.18);transition:width .4s,background .4s}
+.d-dots i.on{width:1.6em;background:var(--g2)}
+@keyframes flo{50%{transform:translateY(-7px)}}
+@media(min-width:1021px){
+  .stage{grid-template-columns:1fr 236px 1fr}
+  .phone{width:236px}
+  .demo{--fs:10px}
+  .col>.glass,.col>.gdark{animation:flo 6s ease-in-out infinite}
+  .col.l>:nth-child(3){animation-delay:-2s}.col.r>:nth-child(1){animation-delay:-1s}.col.r>:nth-child(2){animation-delay:-3s}.col.r>:nth-child(3){animation-delay:-4.5s}
+}
+@media(max-width:560px){.demo{--fs:calc((min(100vw - 44px,330px) - 28px)/21.6)}}
+@media(prefers-reduced-motion:reduce){.col>.glass,.col>.gdark{animation:none}.scn,.d-card,.tap,.wo,.wi{transition:none}}
 </style>
 </head>
 <body>
@@ -306,17 +363,32 @@ footer{color:var(--dim);border-top:1px solid var(--line)}
         <div class="glass skel" style="width:230px"><i></i><span><u style="width:130px"></u><u style="width:90px"></u></span></div>
         <div class="glass c-qz"><span class="tl">Quiz</span><p>Qual o estilo do seu pai?</p><button class="qo">Clássico</button><button class="qo">Esportivo</button><button class="qo">Caseiro</button></div>
       </div>
-      <div class="ph"><div class="phone"><div class="screen">
-        <div class="sh"><b>Calendário 2027</b><small>Sua loja</small></div>
-        <div class="sbig">O que fazer <span>agora.</span></div>
-        <div class="today"><span class="k">HOJE · QUARTA, 20 DE JANEIRO</span><p>Disparo de Carnaval: chegaram as peças de bloco</p><span class="b2">Pegar o disparo pronto</span></div>
-        <div class="wk">
-          <div><b>22</b><i style="background:#7CC4FF"></i>Últimos dias da liquidação</div>
-          <div><b>25</b><i style="background:#F472B6"></i>Looks de bloco nos stories</div>
-          <div><b>27</b><i style="background:#7CC4FF"></i>Quiz "Qual seu look de bloco?"</div>
-          <div><b>30</b><i style="background:#E8C07D"></i>Pré-Carnaval: vitrine de festa</div>
+      <div class="ph"><div class="phone"><div class="screen dm"><div class="demo" id="demo" aria-label="Demonstração do Calendário 2027">
+        <div class="scn s1">
+          <div class="d-h"><b>Calendário 2027</b><small>Sua loja</small></div>
+          <div class="d-big">Novembro</div>
+          <div class="d-g"><i class="w">S</i><i class="w">T</i><i class="w">Q</i><i class="w">Q</i><i class="w">S</i><i class="w">S</i><i class="w">D</i><span>1<em>⏳</em></span><span>2</span><span>3<em>👑</em></span><span>4</span><span>5</span><span>6</span><span>7</span><span>8<em>📝</em></span><span>9</span><span>10</span><span>11</span><span>12</span><span>13</span><span>14</span><span>15<em>✈️</em></span><span>16</span><span>17</span><span>18</span><span>19</span><span>20</span><span>21</span><span>22<em>📣</em></span><span>23<em>🔴</em></span><span>24</span><span>25<em>👑</em></span><span class="t26">26<em>🏷️</em></span><span>27<em>📸</em></span><span>28<em>📣</em></span><span>29<em>🏷️</em></span><span>30<em>🛒</em></span></div>
+          <div class="d-card"><span class="k">SEXTA · 26 DE NOVEMBRO</span><p>🏷️ Black Friday</p><span class="d-btn">Pegar o disparo pronto →</span></div>
         </div>
-      </div></div></div>
+        <div class="scn s2">
+          <div class="d-h"><b>Disparos</b><small>Black Friday</small></div>
+          <span class="d-pill">Anúncio</span>
+          <div class="d-bub"><span class="tx"></span><i class="caret"></i></div>
+          <span class="d-copy">Copiar mensagem</span>
+        </div>
+        <div class="scn s3">
+          <div class="wa-h"><i>VIP</i><div><b>Lista VIP · Black</b><small>248 clientes</small></div></div>
+          <div class="wa-c">
+            <div class="wo">🖤 A BLACK FRIDAY DA SUA LOJA COMEÇOU! 🔥<br>✨ Até 60% OFF em selecionados<small>09:02 ✓✓</small></div>
+            <div class="wi"><b style="color:#D9480F">Camila</b>Quero!! Tem o 36? 😍<small>09:03</small></div>
+            <div class="wi"><b style="color:#5F3DC4">Renata</b>Separa aquela bota preta pra mim 🙏<small>09:03</small></div>
+            <div class="wi"><b style="color:#0B7285">Júlia</b>Passo aí na hora do almoço!<small>09:04</small></div>
+          </div>
+          <div class="wa-t">🎉 3 clientes responderam em 2 min</div>
+        </div>
+        <i class="tap"></i>
+        <div class="d-dots"><i></i><i></i><i></i></div>
+      </div></div></div></div>
       <div class="col r">
         <div class="gdark c-cd"><span class="tl">Contagem · Black Friday</span><div class="cdm"><div><b id="cdD">0</b><small>dias</small></div><div><b id="cdH">0</b><small>h</small></div><div><b id="cdM">0</b><small>min</small></div><div><b id="cdS">0</b><small>seg</small></div></div><div class="vip"><span>Seu WhatsApp</span><b>Quero ser VIP</b></div></div>
         <div class="glass c-scr"><span class="tl">Raspadinha · raspe aqui</span><div id="dScr" style="display:flex;flex-direction:column;gap:10px"></div></div>
@@ -428,6 +500,34 @@ const dR=$('#dRol'),dS=$('#dScr');dR._tok=1;dS._tok=1;roleta(dR);rasp(dS);
 [dR,dS].forEach(e=>{['.stitle','.sname'].forEach(c=>{const x=e.querySelector(c);if(x)x.remove()})});
 (()=>{const t=new Date('2027-11-26T00:00:00-03:00'),p=v=>String(v).padStart(2,'0');const tick=()=>{let s=Math.max(0,Math.floor((t-new Date())/1000));const d=Math.floor(s/86400);s%=86400;const h=Math.floor(s/3600);s%=3600;const m=Math.floor(s/60);s%=60;$('#cdD').textContent=d;$('#cdH').textContent=p(h);$('#cdM').textContent=p(m);$('#cdS').textContent=p(s)};tick();setInterval(tick,1000)})();
 document.querySelectorAll('.qo').forEach(b=>b.onclick=()=>{document.querySelectorAll('.qo').forEach(x=>x.classList.remove('on'));b.classList.add('on')});
+/* demo animada do celular */
+(()=>{const D=$('#demo');if(!D)return;
+  const S=[...D.querySelectorAll('.scn')],dots=[...D.querySelectorAll('.d-dots i')],tap=D.querySelector('.tap'),g=D.querySelector('.d-g'),t26=D.querySelector('.t26'),card=D.querySelector('.d-card'),btn=D.querySelector('.d-btn'),tx=D.querySelector('.tx'),cp=D.querySelector('.d-copy'),wa=[...D.querySelectorAll('.wo,.wi')],wt=D.querySelector('.wa-t');
+  const MSG='🖤 A BLACK FRIDAY DA SUA LOJA COMEÇOU! 🔥\n\nChegou a oportunidade de encontrar seus favoritos por preços especiais!\n\n✨ Produtos a partir de R$ 59,90\n✨ Até 60% OFF em selecionados\n\nMas atenção: as ofertas são por tempo limitado!\n\n📍 Esperamos você na loja! 🛍️';
+  const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  let T=[];const at=(ms,f)=>T.push(setTimeout(f,ms));
+  const scene=i=>{S.forEach((s,k)=>{s.classList.toggle('on',k===i);s.classList.toggle('out',k<i)});dots.forEach((d,k)=>d.classList.toggle('on',k===i))};
+  const moveTo=el=>{const a=D.getBoundingClientRect(),b=el.getBoundingClientRect();tap.style.left=(b.left-a.left+b.width/2)+'px';tap.style.top=(b.top-a.top+b.height/2)+'px'};
+  const press=(el,ms)=>{at(ms,()=>{tap.classList.add('press');el&&el.classList.add('press')});at(ms+180,()=>{tap.classList.remove('press');el&&el.classList.remove('press')})};
+  const reset=()=>{g.classList.remove('pop');t26.classList.remove('hit');card.classList.remove('show');tx.textContent='';cp.classList.remove('ok');cp.textContent='Copiar mensagem';wa.forEach(w=>w.classList.remove('in'));wt.classList.remove('in');tap.style.left='70%';tap.style.top='110%'};
+  if(reduce){scene(0);g.classList.add('pop');t26.classList.add('hit');card.classList.add('show');return}
+  function run(){T.forEach(clearTimeout);T=[];reset();scene(0);
+    at(500,()=>g.classList.add('pop'));
+    at(1500,()=>moveTo(t26));press(null,2300);at(2350,()=>t26.classList.add('hit'));
+    at(2700,()=>card.classList.add('show'));
+    at(3500,()=>moveTo(btn));press(btn,4300);
+    at(4700,()=>{scene(1);tap.style.top='110%'});
+    const chars=[...MSG];chars.forEach((c,i)=>at(5300+i*22,()=>{tx.textContent+=c}));
+    const tEnd=5300+chars.length*22;
+    at(tEnd+300,()=>moveTo(cp));press(cp,tEnd+1100);at(tEnd+1150,()=>{cp.classList.add('ok');cp.textContent='✓ Copiado!'});
+    const s3=tEnd+2300;
+    at(s3,()=>{scene(2);tap.style.top='110%'});
+    wa.forEach((w,i)=>at(s3+600+i*900,()=>w.classList.add('in')));
+    at(s3+600+wa.length*900+200,()=>wt.classList.add('in'));
+    at(s3+600+wa.length*900+3200,run);
+  }
+  let started=false;new IntersectionObserver(es=>{if(es[0].isIntersecting&&!started){started=true;run()}}).observe(D);
+})();
 </script>
 </body>
 </html>
