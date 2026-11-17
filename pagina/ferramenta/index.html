@@ -1,0 +1,1149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Calendário 2027 · Moda & Calçados</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0C0C0D;--card:#151517;--card2:#1C1C1F;--line:#28282C;--tx:#F3F2EF;--mut:#9C9CA3;--dim:#6B6B72;--ac:#3DDC97;--acd:rgba(61,220,151,.10);--acl:rgba(61,220,151,.28)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--tx);font-family:'Inter Tight',system-ui,-apple-system,sans-serif;-webkit-font-smoothing:antialiased;line-height:1.5;padding-bottom:96px}
+button,input,textarea{font:inherit;color:inherit}
+button{cursor:pointer;border:0;background:none}
+.serif{font-family:'Instrument Serif',Georgia,serif;font-style:italic;font-weight:400;letter-spacing:0}
+.g{color:var(--ac)}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+/* header */
+header.top{position:sticky;top:0;z-index:30;background:rgba(12,12,13,.82);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.topin{display:flex;align-items:center;justify-content:space-between;height:62px;gap:16px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:700;letter-spacing:-.02em;font-size:15px;white-space:nowrap}
+.brand i{width:9px;height:9px;border-radius:50%;background:var(--ac);box-shadow:0 0 14px var(--ac)}
+.brand span{color:var(--mut);font-weight:400}
+nav.tabs{display:flex;gap:2px;background:var(--card);border:1px solid var(--line);border-radius:999px;padding:4px}
+nav.tabs button{padding:8px 16px;border-radius:999px;font-size:14px;font-weight:500;color:var(--mut);display:flex;align-items:center;gap:7px;transition:.2s}
+nav.tabs button svg{width:16px;height:16px}
+nav.tabs button.on{background:var(--tx);color:#0C0C0D}
+nav.tabs button:not(.on):hover{color:var(--tx)}
+@media(max-width:820px){
+  header.top{backdrop-filter:none;-webkit-backdrop-filter:none;background:rgba(12,12,13,.97)}
+  nav.tabs{position:fixed;bottom:12px;left:12px;right:12px;justify-content:space-between;z-index:40;background:rgba(21,21,23,.94);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-radius:20px;padding:6px;box-shadow:0 10px 40px rgba(0,0,0,.6)}
+  nav.tabs button{flex-direction:column;gap:3px;padding:8px 4px;font-size:11px;flex:1;border-radius:14px}
+  nav.tabs button svg{width:20px;height:20px}
+}
+/* views */
+.view{display:none;animation:fade .35s ease}
+.view.on{display:block}
+@keyframes fade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.vhead{padding:44px 0 24px}
+.eyebrow{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--ac);font-weight:600;margin-bottom:12px}
+h1{font-size:clamp(40px,7vw,78px);line-height:.98;letter-spacing:-.045em;font-weight:700}
+h1 .serif{font-size:1.08em}
+h2{font-size:clamp(30px,4.6vw,46px);line-height:1.02;letter-spacing:-.035em;font-weight:700}
+h2 .serif{font-size:1.1em}
+h3{font-size:20px;letter-spacing:-.02em;font-weight:650;line-height:1.2}
+.lead{color:var(--mut);font-size:17px;max-width:620px;margin-top:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:22px}
+.pill{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:600;padding:5px 11px;border-radius:999px;background:var(--acd);color:var(--ac);border:1px solid var(--acl)}
+.pill.n{background:var(--card2);color:var(--mut);border-color:var(--line)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 20px;border-radius:14px;font-weight:600;font-size:15px;transition:.2s}
+.btn.p{background:var(--ac);color:#06130D}
+.btn.p:hover{filter:brightness(1.08);transform:translateY(-1px)}
+.btn.s{background:var(--card2);border:1px solid var(--line)}
+.btn.s:hover{border-color:#3a3a40}
+.btn svg{width:17px;height:17px}
+/* home */
+.hero{padding:64px 0 36px;position:relative}
+.hero:before{content:"";position:absolute;right:-10%;top:-40px;width:520px;height:520px;background:radial-gradient(circle,rgba(61,220,151,.16),transparent 62%);pointer-events:none;z-index:-1}
+.hero h1{max-width:900px}
+.hgrid{display:grid;grid-template-columns:1.25fr 1fr;gap:16px;margin-top:40px}
+@media(max-width:820px){.hgrid{grid-template-columns:1fr}}
+.next{padding:26px;position:relative;overflow:hidden}
+.next .big{font-size:clamp(54px,8vw,88px);font-weight:800;letter-spacing:-.05em;line-height:1;margin:14px 0 4px}
+.next .big small{font-size:18px;font-weight:500;color:var(--mut);letter-spacing:0;margin-left:8px}
+.next p{color:var(--mut)}
+.next .row{display:flex;gap:10px;margin-top:22px;flex-wrap:wrap}
+.store{padding:26px;display:flex;flex-direction:column;gap:12px}
+.store label{font-size:13px;color:var(--mut)}
+.store input{background:var(--bg);border:1px solid var(--line);border-radius:14px;padding:14px 16px;font-size:17px;outline:none;transition:.2s}
+.store input:focus{border-color:var(--ac)}
+.store small{color:var(--dim);font-size:13px}
+.shorts{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:16px}
+@media(max-width:820px){.shorts{grid-template-columns:1fr 1fr}}
+.short{padding:20px;text-align:left;transition:.25s;display:flex;flex-direction:column;gap:30px;min-height:150px;justify-content:space-between}
+.short:hover{border-color:var(--acl);transform:translateY(-3px)}
+.short .ic{width:40px;height:40px;border-radius:12px;background:var(--acd);display:grid;place-items:center;color:var(--ac)}
+.short .ic svg{width:20px;height:20px}
+.short b{display:block;font-size:17px;letter-spacing:-.02em}
+.short span{font-size:13px;color:var(--mut)}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:56px 0 20px}
+@media(max-width:820px){.steps{grid-template-columns:1fr 1fr}}
+.step{padding:20px}
+.step em{font-family:'Instrument Serif',serif;font-size:38px;color:var(--ac);line-height:1}
+.step p{color:var(--mut);font-size:14px;margin-top:8px}
+/* calendar */
+.seg{display:inline-flex;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:4px;margin-bottom:22px}
+.seg button{padding:9px 18px;border-radius:10px;font-weight:600;font-size:14px;color:var(--mut)}
+.seg button.on{background:var(--card2);color:var(--tx);box-shadow:inset 0 0 0 1px var(--line)}
+.ygrid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+@media(max-width:980px){.ygrid{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:700px){.ygrid{grid-template-columns:1fr 1fr}}
+@media(max-width:420px){.ygrid{grid-template-columns:1fr}}
+.mc{padding:18px;text-align:left;display:flex;flex-direction:column;gap:12px;transition:.25s;min-height:210px}
+.mc:hover{border-color:var(--acl);transform:translateY(-3px)}
+.mc .top{display:flex;justify-content:space-between;align-items:baseline}
+.mc .num{font-size:13px;color:var(--dim);font-weight:600}
+.mc .nm{font-family:'Instrument Serif',serif;font-style:italic;font-size:30px;line-height:1}
+.mc .th{font-weight:600;font-size:15px;letter-spacing:-.01em;line-height:1.25}
+.mc ul{list-style:none;display:flex;flex-direction:column;gap:5px;margin-top:auto}
+.mc li{font-size:13px;color:var(--mut);display:flex;gap:8px}
+.mc li b{color:var(--tx);font-weight:600;min-width:42px}
+.mchips{display:flex;gap:6px;overflow-x:auto;padding-bottom:6px;margin-bottom:20px;scrollbar-width:none}
+.mchips::-webkit-scrollbar{display:none}
+.chip{flex:none;padding:9px 15px;border-radius:999px;border:1px solid var(--line);background:var(--card);font-size:14px;font-weight:500;color:var(--mut);transition:.2s;white-space:nowrap}
+.chip.on{background:var(--ac);border-color:var(--ac);color:#06130D;font-weight:600}
+.chip:not(.on):hover{color:var(--tx)}
+.mdet{display:grid;grid-template-columns:1.3fr 1fr;gap:14px}
+@media(max-width:820px){.mdet{grid-template-columns:1fr}}
+.mhero{padding:28px;grid-column:1/-1;position:relative;overflow:hidden}
+.mhero:after{content:attr(data-n);position:absolute;right:20px;bottom:-30px;font-size:180px;font-weight:800;letter-spacing:-.06em;color:rgba(255,255,255,.03);line-height:1}
+.mhero .nm{font-family:'Instrument Serif',serif;font-style:italic;font-size:clamp(48px,7vw,72px);line-height:1;color:var(--ac)}
+.mhero h3{font-size:clamp(22px,3vw,30px);margin-top:6px}
+.mhero p{color:var(--mut);margin-top:12px;max-width:640px;font-size:16px}
+.blk{padding:22px}
+.blk .lb{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--dim);font-weight:600;margin-bottom:14px}
+.tl{list-style:none;display:flex;flex-direction:column}
+.tl li{display:flex;gap:14px;padding:12px 0;border-top:1px solid var(--line)}
+.tl li:first-child{border-top:0;padding-top:0}
+.tl b{min-width:74px;color:var(--ac);font-weight:700;font-size:15px}
+.act p{font-size:16px;margin-bottom:16px}
+.act .row{display:flex;gap:10px;flex-wrap:wrap}
+.kv{display:flex;flex-direction:column;gap:16px}
+.kv div span{display:block;font-size:12px;color:var(--dim);text-transform:uppercase;letter-spacing:.1em;font-weight:600;margin-bottom:4px}
+.kv div p{font-size:15px}
+.start{font-size:28px;font-weight:700;letter-spacing:-.03em}
+/* disparos */
+.dlay{display:grid;grid-template-columns:240px 1fr;gap:20px;align-items:start}
+@media(max-width:820px){.dlay{grid-template-columns:1fr}}
+.side{position:sticky;top:80px;padding:10px;max-height:calc(100vh - 100px);overflow:auto}
+@media(max-width:820px){.side{position:static;max-height:none;display:flex;gap:6px;overflow-x:auto;padding:0;background:none;border:0;scrollbar-width:none}.side::-webkit-scrollbar{display:none}.side h4{display:none}}
+.side h4{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--dim);padding:12px 10px 6px}
+.side button{display:flex;justify-content:space-between;align-items:center;width:100%;text-align:left;padding:9px 10px;border-radius:10px;font-size:14px;color:var(--mut);gap:8px}
+.side button small{font-size:12px;color:var(--dim)}
+.side button.on{background:var(--acd);color:var(--ac)}
+.side button.on small{color:var(--ac)}
+.side button:not(.on):hover{background:var(--card2);color:var(--tx)}
+@media(max-width:820px){.side button{flex:none;width:auto;border:1px solid var(--line);background:var(--card);border-radius:999px;padding:8px 14px}.side button small{display:none}}
+.dgroup{margin-bottom:30px}
+.dgroup .gh{display:flex;align-items:baseline;gap:12px;margin-bottom:12px;flex-wrap:wrap}
+.dgroup .gh h3{font-size:22px}
+.dgroup .gh span{color:var(--mut);font-size:14px}
+.msgs{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+@media(max-width:1000px){.msgs{grid-template-columns:1fr}}
+.msg{padding:18px;display:flex;flex-direction:column;gap:12px}
+.msg .mh{display:flex;justify-content:space-between;align-items:center}
+.bubble{background:#0F2A1F;border:1px solid #17402F;border-radius:16px 16px 16px 4px;padding:14px;font-size:14.5px;line-height:1.55;flex:1;white-space:pre-line}
+.copy{display:flex;align-items:center;justify-content:center;gap:7px;padding:10px;border-radius:12px;background:var(--card2);border:1px solid var(--line);font-size:14px;font-weight:600;transition:.2s}
+.copy:hover{border-color:var(--acl);color:var(--ac)}
+.copy.ok{background:var(--ac);color:#06130D;border-color:var(--ac)}
+.copy svg{width:15px;height:15px}
+.tip{font-size:13px;color:var(--mut);margin-top:-14px;margin-bottom:22px}
+/* apps */
+.agrid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+@media(max-width:900px){.agrid{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.agrid{grid-template-columns:1fr}}
+.app{text-align:left;overflow:hidden;transition:.25s;display:flex;flex-direction:column}
+.app:hover{border-color:var(--acl);transform:translateY(-4px)}
+.app .art{height:170px;display:grid;place-items:center;background:radial-gradient(circle at 50% 120%,rgba(61,220,151,.22),transparent 60%),var(--card2);border-bottom:1px solid var(--line)}
+.app .art svg{width:96px;height:96px}
+.app .bd{padding:20px;display:flex;flex-direction:column;gap:8px;flex:1}
+.app .bd p{color:var(--mut);font-size:14px}
+.app .bd .use{margin-top:auto;padding-top:10px;display:flex;gap:6px;flex-wrap:wrap}
+.app .open{display:flex;align-items:center;gap:6px;color:var(--ac);font-weight:600;font-size:14px;margin-top:6px}
+/* modal */
+.modal{position:fixed;inset:0;z-index:60;background:rgba(0,0,0,.7);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);display:none;align-items:center;justify-content:center;padding:16px}
+.modal.on{display:flex;animation:fade .25s}
+.mbox{width:100%;max-width:960px;max-height:92vh;overflow:auto;background:var(--bg);border:1px solid var(--line);border-radius:26px;display:grid;grid-template-columns:1.2fr 1fr}
+@media(max-width:820px){.mbox{grid-template-columns:1fr;max-height:94vh}}
+.stage{padding:30px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;background:radial-gradient(circle at 50% 0%,rgba(61,220,151,.10),transparent 60%),var(--card);min-height:520px;position:relative}
+@media(max-width:820px){.stage{min-height:auto;padding:26px 18px}}
+.info{padding:30px;display:flex;flex-direction:column;gap:18px;position:relative}
+.info .x{position:absolute;top:18px;right:18px;width:38px;height:38px;border-radius:50%;background:var(--card2);border:1px solid var(--line);display:grid;place-items:center}
+.info h3{font-size:28px;letter-spacing:-.03em;padding-right:40px}
+.info p{color:var(--mut);font-size:15px}
+.info ol{padding-left:18px;color:var(--mut);font-size:15px;display:flex;flex-direction:column;gap:8px}
+.info ol li::marker{color:var(--ac);font-weight:700}
+.stitle{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--ac);font-weight:700;text-align:center}
+.sname{font-size:24px;font-weight:700;letter-spacing:-.03em;text-align:center;line-height:1.15}
+.result{text-align:center;min-height:56px}
+.result b{display:block;font-size:26px;letter-spacing:-.03em;color:var(--ac)}
+.result span{color:var(--mut);font-size:14px}
+.wa{background:#25D366;color:#05250F;text-decoration:none}
+/* wheel */
+.wheel{position:relative;width:300px;height:300px;max-width:78vw;max-height:78vw}
+.wheel svg.w{width:100%;height:100%;transition:transform 5s cubic-bezier(.12,.75,.12,1);filter:drop-shadow(0 20px 40px rgba(0,0,0,.6))}
+.wheel .pin{position:absolute;top:-8px;left:50%;transform:translateX(-50%);width:0;height:0;border-left:14px solid transparent;border-right:14px solid transparent;border-top:26px solid var(--tx);z-index:2;filter:drop-shadow(0 3px 4px rgba(0,0,0,.5))}
+.wheel .hub{position:absolute;inset:0;margin:auto;width:58px;height:58px;border-radius:50%;background:var(--bg);border:3px solid var(--ac);display:grid;place-items:center;font-weight:800;font-size:12px;color:var(--ac)}
+/* scratch */
+.scr{position:relative;width:300px;max-width:80vw;aspect-ratio:1.6;border-radius:20px;overflow:hidden;background:linear-gradient(135deg,#123B2A,#0B2219);border:1px solid #1d5a40;display:grid;place-items:center;text-align:center;user-select:none;touch-action:none}
+.scr .prz small{display:block;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#8fe7bf}
+.scr .prz b{display:block;font-size:44px;font-weight:800;letter-spacing:-.04em;color:var(--ac);line-height:1.05}
+.scr .prz span{font-family:monospace;font-size:14px;color:#cdeedd;background:rgba(0,0,0,.3);padding:3px 9px;border-radius:6px}
+.scr canvas{position:absolute;inset:0;width:100%;height:100%;cursor:grab;transition:opacity .6s}
+/* quiz */
+.qz{width:100%;max-width:400px;display:flex;flex-direction:column;gap:12px}
+.qbar{height:4px;background:var(--line);border-radius:4px;overflow:hidden}
+.qbar i{display:block;height:100%;background:var(--ac);transition:.3s}
+.qq{font-size:22px;font-weight:700;letter-spacing:-.02em;line-height:1.2;margin:6px 0}
+.qo{padding:15px 16px;border-radius:14px;border:1px solid var(--line);background:var(--bg);text-align:left;font-size:15px;transition:.15s}
+.qo:hover{border-color:var(--ac);background:var(--acd)}
+.qres{text-align:center;display:flex;flex-direction:column;gap:12px;align-items:center}
+.qres .ttl{font-family:'Instrument Serif',serif;font-style:italic;font-size:44px;color:var(--ac);line-height:1}
+.qres .prods{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;width:100%;margin-top:6px}
+.qres .prods div{background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:12px 8px;font-size:13px}
+.qres .prods div i{display:block;font-style:normal;font-size:26px;margin-bottom:4px}
+/* countdown */
+.cd{display:flex;gap:10px}
+.cd div{width:78px;padding:16px 0;border-radius:16px;background:var(--bg);border:1px solid var(--line);text-align:center}
+.cd b{display:block;font-size:36px;font-weight:800;letter-spacing:-.04em;font-variant-numeric:tabular-nums;line-height:1}
+.cd span{font-size:11px;color:var(--mut);text-transform:uppercase;letter-spacing:.1em}
+@media(max-width:420px){.cd div{width:64px}.cd b{font-size:28px}}
+.vip{display:flex;gap:8px;width:100%;max-width:380px}
+.vip input{flex:1;min-width:0;background:var(--bg);border:1px solid var(--line);border-radius:14px;padding:13px 14px;outline:none}
+.vip input:focus{border-color:var(--ac)}
+/* card */
+.cform{display:flex;flex-direction:column;gap:8px;width:100%;max-width:400px}
+.cform input,.cform textarea{background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:11px 13px;outline:none;font-size:14px;resize:none}
+.cform input:focus,.cform textarea:focus{border-color:var(--ac)}
+.cform .two{display:flex;gap:8px}
+.cform .two input{flex:1;min-width:0}
+.gcard{width:100%;max-width:400px;aspect-ratio:1.55;border-radius:20px;padding:22px;background:linear-gradient(140deg,#F4EDE4,#E8D9C8);color:#2A2119;position:relative;overflow:hidden;display:flex;flex-direction:column;justify-content:space-between;box-shadow:0 24px 50px rgba(0,0,0,.5)}
+.gcard:before{content:"";position:absolute;right:-40px;top:-40px;width:170px;height:170px;border-radius:50%;background:radial-gradient(circle,#E9B9A6,transparent 70%);opacity:.7}
+.gcard .to{font-family:'Instrument Serif',serif;font-style:italic;font-size:32px;line-height:1;position:relative}
+.gcard .ms{font-size:14px;line-height:1.45;position:relative;max-height:4.4em;overflow:hidden}
+.gcard .ft{display:flex;justify-content:space-between;align-items:flex-end;font-size:12px;position:relative}
+.gcard .vale{background:#2A2119;color:#F4EDE4;padding:7px 11px;border-radius:9px;font-weight:700;font-size:12px}
+/* advent */
+.adv{display:grid;grid-template-columns:repeat(6,1fr);gap:7px;width:100%;max-width:420px}
+.door{aspect-ratio:1;border-radius:11px;background:linear-gradient(145deg,#1D2E25,#122019);border:1px solid #24402F;font-weight:800;font-size:17px;color:#cfe9db;position:relative;transition:.3s;display:grid;place-items:center;padding:2px}
+.door:hover{border-color:var(--ac)}
+.door.op{background:var(--ac);color:#06130D;font-size:9.5px;font-weight:700;line-height:1.1;text-align:center;animation:pop .35s}
+.door.lock{opacity:.4}
+@keyframes pop{0%{transform:rotateY(90deg)}100%{transform:none}}
+/* vender mais */
+.calc{display:grid;grid-template-columns:1fr 1.2fr;gap:0;overflow:hidden;margin-bottom:34px}
+@media(max-width:820px){.calc{grid-template-columns:1fr}}
+.calc .in{padding:26px;display:flex;flex-direction:column;gap:14px;border-right:1px solid var(--line)}
+@media(max-width:820px){.calc .in{border-right:0;border-bottom:1px solid var(--line)}}
+.calc label{font-size:13px;color:var(--mut);display:flex;flex-direction:column;gap:6px}
+.calc input{background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:12px 14px;font-size:17px;outline:none;font-variant-numeric:tabular-nums}
+.calc input:focus{border-color:var(--ac)}
+.calc .out{padding:26px;display:flex;flex-direction:column;gap:18px;background:radial-gradient(circle at 100% 0%,rgba(61,220,151,.10),transparent 55%)}
+.kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.kpi{background:var(--bg);border:1px solid var(--line);border-radius:16px;padding:16px}
+.kpi span{font-size:12px;color:var(--mut);display:block}
+.kpi b{font-size:26px;font-weight:800;letter-spacing:-.04em;font-variant-numeric:tabular-nums}
+@media(max-width:480px){.kpis{grid-template-columns:1fr}.kpi{display:flex;justify-content:space-between;align-items:center;padding:13px 16px}.kpi b{font-size:22px}}
+.sim{background:var(--acd);border:1px solid var(--acl);border-radius:16px;padding:18px}
+.sim p{font-size:15px}
+.sim b{color:var(--ac)}
+.sim .gain{font-size:34px;font-weight:800;letter-spacing:-.04em;color:var(--ac);margin:4px 0}
+.form{font-size:13px;color:var(--dim)}
+.vfilter{display:flex;gap:6px;margin-bottom:16px;flex-wrap:wrap}
+.tgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+@media(max-width:820px){.tgrid{grid-template-columns:1fr}}
+.tac{padding:22px;display:flex;flex-direction:column;gap:12px}
+.tac .th{display:flex;justify-content:space-between;align-items:flex-start;gap:10px}
+.tac .n{font-family:'Instrument Serif',serif;font-style:italic;font-size:34px;color:var(--dim);line-height:.8}
+.tac p{color:var(--mut);font-size:15px}
+.tac .how{font-size:14px;border-left:2px solid var(--ac);padding-left:12px;color:var(--tx)}
+.tac .sc{background:var(--card2);border:1px solid var(--line);border-radius:12px;padding:12px 14px;font-size:14px;font-style:italic;color:#d9d8d4}
+.tac .sc:before{content:"Fala do vendedor";display:block;font-style:normal;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--ac);font-weight:700;margin-bottom:4px}
+footer{color:var(--dim);font-size:13px;padding:50px 0 20px;text-align:center}
+.toast{position:fixed;left:50%;bottom:100px;transform:translateX(-50%) translateY(20px);background:var(--tx);color:#0C0C0D;padding:12px 18px;border-radius:12px;font-weight:600;font-size:14px;opacity:0;pointer-events:none;transition:.3s;z-index:80}
+.toast.on{opacity:1;transform:translateX(-50%)}
+
+/* editor */
+.itabs{display:flex;gap:4px;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:4px}
+.itabs button{flex:1;padding:8px 6px;border-radius:9px;font-size:13px;font-weight:600;color:var(--mut)}
+.itabs button.on{background:var(--card2);color:var(--tx);box-shadow:inset 0 0 0 1px var(--line)}
+.ip{display:flex;flex-direction:column;gap:16px}
+.ip[hidden]{display:none}
+.frm{display:flex;flex-direction:column;gap:12px}
+.fg{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px;display:flex;flex-direction:column;gap:10px}
+.fh{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--ac);font-weight:700}
+.fl{display:flex;flex-direction:column;gap:5px;font-size:12px;color:var(--mut)}
+.fl input,.fl textarea{background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:10px 12px;font-size:14px;color:var(--tx);outline:none;resize:vertical;min-width:0;width:100%}
+.fl input:focus,.fl textarea:focus{border-color:var(--ac)}
+.fl input[type=color]{width:38px;height:38px;padding:3px;border-radius:50%;cursor:pointer}
+.f2{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.cols{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.sw{width:30px;height:30px;border-radius:50%;border:2px solid transparent;box-shadow:inset 0 0 0 1px rgba(0,0,0,.3)}
+.sw.on{border-color:var(--tx)}
+.info .fnote,.fnote{font-size:12px;color:var(--dim)}
+.info .linkbox p{font-size:13px}
+.linkbox{background:linear-gradient(var(--acd),var(--acd)),var(--bg);box-shadow:0 -14px 24px var(--bg);border:1px solid var(--acl);border-radius:16px;padding:16px;display:flex;flex-direction:column;gap:10px;position:sticky;bottom:-30px}
+.linkbox p{font-size:13px;color:var(--mut)}
+.lrow{display:flex;gap:8px;flex-wrap:wrap}
+.lrow .btn{flex:1;padding:11px 12px;font-size:14px}
+.lout{background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:9px 11px;font-size:12px;color:var(--mut);width:100%}
+.rst{font-size:12px;color:var(--dim);text-decoration:underline;align-self:flex-start}
+.prm{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px;font-size:12.5px;line-height:1.55;white-space:pre-wrap;max-height:280px;overflow:auto;color:#d6d5d1;font-family:ui-monospace,Menlo,monospace}
+.where{list-style:none;display:flex;flex-direction:column;gap:8px;font-size:14px;color:var(--mut)}
+.where b{color:var(--tx)}
+.btn.p{color:var(--on,#06130D)}
+.stage .chip.on,#player .chip.on{color:var(--on,#06130D)}
+.qres .prods div i{display:block;width:8px;height:8px;border-radius:50%;background:var(--ac);margin:0 auto 8px}
+@media(min-width:821px){.mbox .stage{position:sticky;top:0;height:min(92vh,760px);align-self:start}}
+/* player */
+#player{display:none}
+#player.on{display:flex;position:fixed;inset:0;z-index:90;background:radial-gradient(circle at 50% 0%,var(--acd),transparent 60%),var(--bg);overflow:auto;flex-direction:column;align-items:center;justify-content:center;padding:28px 16px}
+#player .stage{background:none;min-height:auto;width:100%;max-width:520px;padding:10px}
+.pclose{position:fixed;top:14px;right:14px;z-index:2;padding:10px 14px;border-radius:12px;background:var(--card2);border:1px solid var(--line);font-size:13px;font-weight:600}
+.pfoot{margin-top:18px;font-size:12px;color:var(--dim);letter-spacing:.14em;text-transform:uppercase}
+body.player>header,body.player>main{display:none}
+
+/* home v2 */
+.hhead{padding:34px 0 18px}
+.h1s{font-size:clamp(38px,6vw,64px)}
+.today{padding:24px;background:radial-gradient(circle at 100% 0%,rgba(61,220,151,.14),transparent 55%),var(--card);border-color:var(--acl)}
+.tl1{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:16px}
+.tdate{font-size:15px;color:var(--mut)}
+.tits{display:flex;flex-direction:column;gap:12px}
+.it{display:flex;gap:12px;align-items:flex-start}
+.it>i{width:10px;height:10px;border-radius:50%;margin-top:7px;flex:none}
+.it span{font-size:11px;letter-spacing:.12em;text-transform:uppercase;font-weight:700}
+.it p{font-size:18px;font-weight:600;letter-spacing:-.015em;line-height:1.3}
+.today .it p{font-size:clamp(19px,2.6vw,24px)}
+.today .row{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
+@media(max-width:560px){.today .row .btn{flex:1}}
+.hgrid{display:grid;grid-template-columns:1.3fr 1fr;gap:14px;margin-top:14px}
+@media(max-width:820px){.hgrid{grid-template-columns:1fr}}
+.side2{display:flex;flex-direction:column;gap:14px}
+.week{padding:22px}
+.week .lb,.gblk .lb{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--dim);font-weight:600;margin-bottom:10px}
+.wrow{display:flex;gap:14px;width:100%;text-align:left;padding:11px 8px;border-top:1px solid var(--line);border-radius:10px;transition:.15s}
+.wrow:first-child{border-top:0}
+.wrow:hover{background:var(--card2)}
+.wd{min-width:40px;display:flex;flex-direction:column;align-items:center;font-size:11px;color:var(--dim);text-transform:uppercase;letter-spacing:.06em}
+.wd b{font-size:20px;color:var(--tx);letter-spacing:-.03em;line-height:1.1}
+.wi{display:flex;flex-direction:column;gap:4px;font-size:14px;justify-content:center}
+.wi span{display:flex;gap:8px;align-items:baseline}
+.wi i{width:7px;height:7px;border-radius:50%;flex:none;transform:translateY(-1px)}
+.free{color:var(--dim);font-size:14px}
+.next{padding:22px}
+.next .big{font-size:52px;margin:10px 0 2px}
+.store{padding:22px;gap:10px}
+.shorts{margin:14px 0 10px}
+.btn.sm{padding:10px 14px;font-size:14px;border-radius:12px}
+/* month grid */
+.gblk{grid-column:1/-1}
+.ghead{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:14px}
+.legend{display:flex;gap:12px;flex-wrap:wrap;font-size:12px;color:var(--mut)}
+.legend span{display:flex;align-items:center;gap:6px}
+.legend i{width:8px;height:8px;border-radius:50%}
+.cgrid{display:grid;grid-template-columns:repeat(7,1fr);gap:6px}
+.cw{font-size:11px;text-transform:uppercase;letter-spacing:.1em;color:var(--dim);text-align:center;padding:4px 0;font-weight:600}
+.cday{min-height:104px;border-radius:12px;background:var(--bg);border:1px solid var(--line);padding:8px;text-align:left;display:flex;flex-direction:column;gap:5px;transition:.15s;overflow:hidden}
+.cday:hover{border-color:#3a3a40}
+.cday b{font-size:14px;font-weight:700;display:flex;justify-content:space-between}
+.cday b em{color:var(--ac);font-style:normal}
+.cday.ev b{color:var(--ac)}
+.cday.sel{border-color:var(--ac);box-shadow:0 0 0 1px var(--ac);background:var(--acd)}
+.cday.tod{outline:2px dashed var(--mut);outline-offset:-4px}
+.cday .dots{display:none;gap:3px;flex-wrap:wrap}
+.cday .dots i{width:6px;height:6px;border-radius:50%}
+.txts{display:flex;flex-direction:column;gap:4px}
+.txts span{font-size:11.5px;line-height:1.3;color:var(--tx);border-left:2px solid var(--c);padding-left:6px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.txts .more{border:0;padding:0;color:var(--dim)}
+@media(max-width:760px){.cgrid{gap:4px}.cday{min-height:54px;padding:6px 4px;align-items:center;border-radius:10px}.cday b{font-size:13px}.cday b em{display:none}.cday .dots{display:flex;justify-content:center}.txts{display:none}}
+#dayDet{margin-top:16px;border-top:1px solid var(--line);padding-top:18px}
+.dhead{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:14px}
+.dhead h3{font-size:20px}
+.erows{display:flex;flex-direction:column;gap:8px}
+.erow{display:flex;gap:6px}
+.erow select,.erow input{background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:10px;font-size:14px;color:var(--tx);outline:none}
+.erow select{width:130px;flex:none}
+.erow input{flex:1;min-width:0}
+.erow input:focus,.erow select:focus{border-color:var(--ac)}
+.erow .del{width:40px;flex:none;border-radius:10px;border:1px solid var(--line);display:grid;place-items:center;color:var(--mut)}
+@media(max-width:560px){.erow{flex-wrap:wrap}.erow select{width:calc(100% - 46px)}.erow input{flex-basis:100%;order:3}}
+.add{margin-top:10px;font-size:14px;font-weight:600;color:var(--ac)}
+.row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.plats{display:flex;gap:8px;flex-wrap:wrap}
+.plats a{padding:10px 16px;border-radius:12px;background:var(--card);border:1px solid var(--line);color:var(--tx);text-decoration:none;font-weight:600;font-size:14px}
+.plats a:hover{border-color:var(--ac);color:var(--ac)}
+
+.elist{display:flex;flex-direction:column;gap:14px}
+details.est{padding:0;overflow:hidden}
+details.est summary{list-style:none;cursor:pointer;padding:24px;display:flex;justify-content:space-between;gap:16px;align-items:flex-start}
+details.est summary::-webkit-details-marker{display:none}
+details.est summary h3{margin-top:12px;font-size:clamp(19px,2.4vw,24px)}
+details.est .tg{font-size:28px;color:var(--ac);line-height:1}
+details.est[open] .tg{transform:rotate(45deg)}
+.eb{padding:0 24px 26px;display:flex;flex-direction:column;gap:14px}
+.when{background:var(--bg);border:1px solid var(--line);border-radius:16px;padding:16px}
+.when b{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--ac)}
+.when p{margin-top:4px}
+.mchips2{display:flex;gap:6px;flex-wrap:wrap;margin-top:12px}
+.lb2{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--dim);font-weight:600;margin-top:8px}
+.steps2{padding-left:22px;display:flex;flex-direction:column;gap:10px;font-size:16px}
+.steps2 li::marker{color:var(--ac);font-weight:800}
+.msgs2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:760px){.msgs2{grid-template-columns:1fr}}
+.chk{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:8px}
+@media(max-width:560px){.chk{grid-template-columns:1fr}}
+.chk label{display:flex;gap:10px;align-items:center;font-size:15px;padding:10px 12px;background:var(--bg);border:1px solid var(--line);border-radius:12px;cursor:pointer}
+.chk input{accent-color:var(--ac);width:18px;height:18px}
+@media(max-width:820px){nav.tabs button{font-size:10px;padding:8px 2px}}
+</style>
+</head>
+<body>
+
+<header class="top"><div class="wrap topin">
+  <div class="brand"><i></i>Calendário 2027 <span>· Moda &amp; Calçados</span></div>
+  <nav class="tabs" id="tabs">
+    <button data-go="inicio" class="on"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10.5 12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1z"/></svg>Início</button>
+    <button data-go="calendario"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4.5" width="18" height="17" rx="3"/><path d="M3 9.5h18M8 2.5v4M16 2.5v4"/></svg>Calendário</button>
+    <button data-go="disparos"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8.5 8.5 0 0 1-12.6 7.4L3 21l1.6-5.2A8.5 8.5 0 1 1 21 12z"/></svg>Disparos</button>
+    <button data-go="apps"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7.5" height="7.5" rx="2"/><rect x="13.5" y="3" width="7.5" height="7.5" rx="2"/><rect x="3" y="13.5" width="7.5" height="7.5" rx="2"/><circle cx="17.25" cy="17.25" r="3.75"/></svg>Apps</button>
+    <button data-go="estrategias"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.6 6.3L21 9l-5 4.4L17.5 20 12 16.6 6.5 20 8 13.4 3 9l6.4-.7z"/></svg>Estratégias</button>
+    <button data-go="vender"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/></svg>Vender mais</button>
+  </nav>
+</div></header>
+
+<main class="wrap">
+
+<!-- INÍCIO -->
+<section class="view on" id="v-inicio">
+  <div class="hhead">
+    <div class="eyebrow" id="hello">Plano de vendas 2027 · Moda e calçados</div>
+    <h1 class="h1s">O que fazer <span class="serif g">agora.</span></h1>
+  </div>
+  <div class="card today" id="today"></div>
+  <div class="hgrid">
+    <div class="card week"><div class="lb">Próximos 7 dias</div><div id="week"></div><button class="btn s" style="margin-top:14px;width:100%" id="weekCal">Abrir o calendário do mês</button></div>
+    <div class="side2">
+      <div class="card next"><span class="pill">Próxima data grande</span><div class="big" id="nextDays">—</div><h3 id="nextName">—</h3><p id="nextWhen">—</p><button class="btn s" id="nextGo" style="margin-top:16px">Ver o plano da data</button></div>
+      <div class="card store"><h3>Nome da sua loja</h3><input id="loja" placeholder="Ex.: Studio Bella Calçados" maxlength="40"><small>Entra sozinho nos disparos e nos apps.</small></div>
+    </div>
+  </div>
+  <div class="shorts">
+    <button class="card short" data-go="calendario"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="4.5" width="18" height="17" rx="3"/><path d="M3 9.5h18M8 2.5v4M16 2.5v4"/></svg></div><div><b>Calendário</b><span>Uma ação para cada dia</span></div></button>
+    <button class="card short" data-go="disparos"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 12a8.5 8.5 0 0 1-12.6 7.4L3 21l1.6-5.2A8.5 8.5 0 1 1 21 12z"/></svg></div><div><b>Disparos</b><span id="cntMsgs">Mensagens prontas</span></div></button>
+    <button class="card short" data-go="apps"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 3v9l6 4"/></svg></div><div><b>Apps</b><span>5 apps para personalizar</span></div></button>
+    <button class="card short" data-go="vender"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/></svg></div><div><b>Vender mais</b><span>PA e ticket médio</span></div></button>
+  </div>
+</section>
+
+<!-- CALENDÁRIO -->
+<section class="view" id="v-calendario">
+  <div class="vhead">
+    <div class="eyebrow">Calendário estratégico</div>
+    <h2>O ano inteiro, <span class="serif g">mês a mês.</span></h2>
+    <p class="lead">Veja tudo de uma vez ou abra um mês para ver o plano completo.</p>
+  </div>
+  <div class="seg"><button data-cv="ano" class="on">Ano todo</button><button data-cv="mes">Por mês</button></div>
+  <div id="calAno" class="ygrid"></div>
+  <div id="calMes" style="display:none">
+    <div class="mchips" id="mchips"></div>
+    <div id="mdet"></div>
+  </div>
+</section>
+
+<!-- DISPAROS -->
+<section class="view" id="v-disparos">
+  <div class="vhead">
+    <div class="eyebrow">Ideias de disparo</div>
+    <h2>Copie, cole e <span class="serif g">venda.</span></h2>
+    <p class="lead">3 opções para cada data: direto, interativo e última chamada. E ainda mensagens para o dia a dia da loja.</p>
+  </div>
+  <p class="tip">Troque o que está entre colchetes antes de enviar. O nome da loja já entra sozinho.</p>
+  <div class="dlay">
+    <aside class="card side" id="dside"></aside>
+    <div id="dlist"></div>
+  </div>
+</section>
+
+<!-- APPS -->
+<section class="view" id="v-apps">
+  <div class="vhead">
+    <div class="eyebrow">Apps interativos</div>
+    <h2>Teste tudo <span class="serif g">funcionando.</span></h2>
+    <p class="lead">Cinco formatos que cobrem o ano inteiro. Teste, personalize com a sua loja e gere o seu link pronto para mandar aos clientes.</p>
+  </div>
+  <div class="agrid" id="agrid"></div>
+</section>
+
+<!-- ESTRATÉGIAS -->
+<section class="view" id="v-estrategias">
+  <div class="vhead">
+    <div class="eyebrow">Estratégias</div>
+    <h2>As ações que mais <span class="serif g">movimentam a loja.</span></h2>
+    <p class="lead">Live shop, grupo VIP e bazar secreto: quando usar, o passo a passo, as mensagens e o checklist.</p>
+  </div>
+  <div id="elist" class="elist"></div>
+</section>
+
+<!-- VENDER MAIS -->
+<section class="view" id="v-vender">
+  <div class="vhead">
+    <div class="eyebrow">Vender mais</div>
+    <h2>Mais peças por cliente, <span class="serif g">ticket mais alto.</span></h2>
+    <p class="lead">Coloque os números da sua loja e veja quanto vale subir um pouco o PA. Depois, as ações para chegar lá.</p>
+  </div>
+  <div class="card calc">
+    <div class="in">
+      <h3>Os números do seu mês</h3>
+      <label>Faturamento (R$)<input id="cF" type="number" inputmode="decimal" value="80000"></label>
+      <label>Número de vendas (atendimentos que compraram)<input id="cV" type="number" inputmode="numeric" value="320"></label>
+      <label>Peças vendidas<input id="cP" type="number" inputmode="numeric" value="448"></label>
+    </div>
+    <div class="out">
+      <div class="kpis">
+        <div class="kpi"><span>Ticket médio</span><b id="kT">—</b></div>
+        <div class="kpi"><span>PA (peças por venda)</span><b id="kP">—</b></div>
+        <div class="kpi"><span>Preço médio da peça</span><b id="kM">—</b></div>
+      </div>
+      <div class="sim">
+        <p>Se cada venda levar só <b>+0,2 peça</b> (1 a mais a cada 5 clientes):</p>
+        <div class="gain" id="kG">—</div>
+        <p id="kG2">—</p>
+      </div>
+      <div class="form">Ticket médio = faturamento ÷ vendas · PA = peças ÷ vendas · Preço médio = faturamento ÷ peças</div>
+    </div>
+  </div>
+  <div class="vfilter" id="vfilter"></div>
+  <div class="tgrid" id="tgrid"></div>
+</section>
+
+<footer>Calendário Estratégico 2027 · Moda &amp; Calçados</footer>
+</main>
+
+<div class="modal" id="modal"><div class="mbox"><div class="stage" id="stage"></div><div class="info" id="info"></div></div></div>
+<div class="toast" id="toast"></div>
+<div id="player"><button class="pclose" onclick="closePlayer()">Fechar prévia</button><div class="stage"></div><div class="pfoot"></div></div>
+
+<script>
+/* ---------- DATA ---------- */
+const MESES=[
+{n:'Janeiro',t:'Liquidação de verão e volta às aulas',obj:'Girar o estoque de verão e vender tênis e calçado escolar. É mês de caixa baixo do cliente: o foco é preço e necessidade.',d:[['02/01','Início da liquidação de verão'],['2ª quinz.','Volta às aulas (varia por estado e escola)']],a:'roleta',ad:'Roleta de descontos com faixas de 10%, 15% e 20%, mais um brinde (meia ou palmilha) na compra de tênis escolar.',st:'Enquete "Seu filho volta às aulas com tênis novo?". Quem responder sim recebe o link da roleta.',c:'2 de janeiro',ev:['verao','aulas']},
+{n:'Fevereiro',t:'Carnaval',obj:'Vender rasteiras, sandálias, tênis confortáveis e peças de festa antes da folia. Depois do Carnaval o movimento cai até março.',d:[['06–09/02','Carnaval'],['10/02','Quarta-feira de Cinzas']],a:'quiz',ad:'Quiz "Qual seu look de bloco?". O resultado mostra um estilo e 3 produtos da loja.',st:'Contagem regressiva para o Carnaval e caixinha "Vai para qual bloco?".',c:'20 de janeiro',ev:['carnaval']},
+{n:'Março',t:'Mulher, Consumidor e Páscoa',obj:'Primeiro grande pico do ano. A coleção de outono começa a chegar e o Dia do Consumidor funciona como uma "mini Black".',d:[['08/03','Dia da Mulher'],['15/03','Dia do Consumidor'],['28/03','Páscoa']],a:'raspadinha',ad:'Raspadinha do consumidor: todo mundo ganha algo (10%, 15%, frete grátis ou brinde), com validade de 3 dias.',st:'Dia da Mulher com homenagem e clientes reais da loja. Páscoa com "compre e ganhe um chocolate".',c:'1º de março',ev:['mulher','consumidor','pascoa']},
+{n:'Abril',t:'Lançamento outono-inverno',obj:'Apresentar a coleção nova (botas, tênis fechados, jaquetas) e esquentar a base para o Dia das Mães. Mês de vitrine, não de desconto.',d:[['21/04','Tiradentes (feriado prolongado)'],['20/04','Virada do foco para o Dia das Mães']],a:'disparo',ad:'Disparo interativo: o cliente responde 1, 2 ou 3 e recebe as fotos das peças do estilo dele.',st:'"Esse ou esse?" com duas peças da coleção por dia.',c:'1º de abril',ev:['inverno']},
+{n:'Maio',t:'Dia das Mães',obj:'Segunda maior data do varejo. Quem compra é o filho ou o marido, que não sabe o número nem o gosto: a loja vende segurança na escolha.',d:[['09/05','Dia das Mães'],['27/05','Corpus Christi']],a:'cartao',ad:'Cartão interativo: o filho escreve a mensagem e a mãe recebe um vale para escolher o presente na loja.',st:'Troca garantida até 30 dias e embrulho grátis, divulgados tanto quanto o produto.',c:'20 de abril',ev:['maes']},
+{n:'Junho',t:'Namorados e Copa Feminina',obj:'Vender presentes para casal e aproveitar a Copa do Mundo Feminina, que será no Brasil. Início oficial do inverno.',d:[['12/06','Dia dos Namorados'],['21/06','Início do inverno'],['24/06','Abertura da Copa Feminina']],a:'quiz',ad:'Quiz do casal "Qual presente combina com seu amor?", com 3 produtos e botão para o WhatsApp.',st:'Palpite do placar dos jogos do Brasil, com prêmio para quem acertar.',c:'25 de maio',ev:['namorados','copa']},
+{n:'Julho',t:'Liquidação de inverno e férias',obj:'Girar o estoque de inverno antes da coleção de primavera. Segundo mês de liquidação do ano, e o cliente já espera por ele.',d:[['20/07','Dia do Amigo'],['25/07','Final da Copa Feminina'],['26/07','Dia dos Avós']],a:'contagem',ad:'Contagem regressiva: quem entra na lista VIP compra 1 dia antes, com a grade completa.',st:'Dia do Amigo: "traga uma amiga e as duas ganham".',c:'1º de julho',ev:['liqinverno','amigo']},
+{n:'Agosto',t:'Dia dos Pais',obj:'Terceira grande data de presente. O homem compra pouco para si, então quem decide é o filho ou a esposa. Foco em tênis, sapatênis e chinelos.',d:[['08/08','Dia dos Pais']],a:'quiz',ad:'Quiz "Qual o estilo do seu pai?" (clássico, esportivo ou caseiro), com 3 presentes por faixa de preço.',st:'Enquetes "pai de qual tipo" e vale-troca em destaque.',c:'20 de julho',ev:['pais']},
+{n:'Setembro',t:'Dia do Cliente e primavera',obj:'Fidelizar quem já comprou e lançar a coleção primavera-verão. É a data para agradecer, não para vender mais barato a todo mundo.',d:[['07/09','Independência'],['15/09','Dia do Cliente'],['fim do mês','Início da primavera']],a:'roleta',ad:'Roleta do cliente VIP, só para quem comprou nos últimos 12 meses. Todos os prêmios são bons.',st:'Disparo interativo com a coleção nova, no mesmo modelo de abril.',c:'1º de setembro',ev:['cliente','primavera']},
+{n:'Outubro',t:'Dia das Crianças e pré-Black',obj:'Vender calçado infantil e, principalmente, montar a lista VIP da Black Friday. Quem chega em novembro sem lista compete só no preço.',d:[['12/10','Dia das Crianças'],['15/10','Dia do Professor'],['25/10','Abertura da lista VIP da Black']],a:'roleta',ad:'Roleta com brinde infantil (balão, adesivo ou meia divertida) na compra de calçado infantil.',st:'Cadastro na lista VIP com uma vantagem clara: comprar antes, cupom extra ou brinde garantido.',c:'25 de setembro',ev:['criancas','vip']},
+{n:'Novembro',t:'Black Friday',obj:'Maior data de volume do ano. A venda é decidida antes do dia: quem aqueceu a lista vende, quem não aqueceu depende de anúncio caro.',d:[['25/11','Cupom secreto para a lista VIP'],['26/11','Black Friday'],['29/11','Cyber Monday'],['30/11','1ª parcela do 13º']],a:'contagem',ad:'Contagem regressiva + cupom secreto na quinta à noite, antes da abertura oficial.',st:'Sequência: aviso em 15/11, lembrete em 22/11, cupom em 25/11 e última chamada em 28/11.',c:'1º de novembro',ev:['black']},
+{n:'Dezembro',t:'Natal',obj:'Maior faturamento do ano. O cliente quer resolver o presente rápido e sem erro: atendimento pelo WhatsApp e troca garantida pesam mais que desconto.',d:[['20/12','2ª parcela do 13º'],['25/12','Natal'],['26–31/12','Trocas e Ano-Novo']],a:'raspadinha',ad:'Raspadinha de Natal de 18 a 24/12 para quem comprar acima de R$[valor], com cupom para usar em janeiro. Já puxa a liquidação.',st:'Contagem regressiva para o Natal nos stories e caixinha "Para quem é o presente?".',c:'1º de dezembro',ev:['natal','trocas']}
+];
+const L3=['Direto','Interativo','Última chamada'];
+const EV={
+verao:{t:'Liquidação de verão',dt:'02/01',iso:'2027-01-02',m:0,x:["Oi, [nome]! Começou a liquidação de verão da {loja} ☀️ Peças com até [X]% OFF e numeração ainda completa. Quer que eu te mande as fotos do seu número?","[nome], separei uma roleta só para clientes da lista 🎯 Gira aqui e descobre seu desconto → [link]\nO cupom vale até [data].","Últimos dias da liquidação, [nome]! A grade está acabando e o seu número ainda tem. Me responde \"QUERO\" que eu separo antes de acabar."]},
+aulas:{t:'Volta às aulas',dt:'jan',iso:'2027-01-20',m:0,x:["[nome], a volta às aulas está chegando 🎒 Chegaram os tênis escolares na {loja}. Me fala o número do seu filho que eu mando as opções.","Responde com um número, [nome]:\n1 — tênis para o dia a dia\n2 — tênis para educação física\n3 — os dois, com desconto no combo\nTe mando as fotos na hora.","Última semana antes das aulas, [nome]! Quem comprar tênis escolar até [data] ganha uma meia. Quer que eu separe?"]},
+carnaval:{t:'Carnaval',dt:'06–09/02',iso:'2027-02-06',m:1,x:["[nome], o Carnaval está chegando 🎉 Chegaram rasteiras e tênis confortáveis para aguentar o bloco o dia todo. Quer ver?","Já sabe com que pé vai pular o Carnaval? Fiz um quiz de 1 minuto que descobre seu look de bloco → [link]\nMe manda o resultado!","Último dia para garantir o look antes do Carnaval, [nome]! Compras até [hora] saem hoje ainda. Bora?"]},
+mulher:{t:'Dia da Mulher',dt:'08/03',iso:'2027-03-08',m:2,x:["[nome], hoje é seu dia 💐 A equipe da {loja} preparou um mimo para cada cliente que passar aqui até [data]. É só vir!","[nome], a {loja} quer saber: qual peça te faz se sentir mais confiante? Responde que eu separo opções no seu estilo.","Ainda dá tempo, [nome]! O mimo do Dia da Mulher vale até amanhã. Te esperamos."]},
+consumidor:{t:'Dia do Consumidor',dt:'15/03',iso:'2027-03-15',m:2,x:["[nome], dia 15 é Dia do Consumidor e quem ganha o presente é você 🎁 Preparamos condições especiais de [data] a [data].","Raspa aqui e descobre seu presente do Dia do Consumidor → [link]\nTodo mundo ganha algo, [nome]!","Seu cupom do Dia do Consumidor vence hoje, [nome]! Me chama aqui que eu reservo a peça para você."]},
+pascoa:{t:'Páscoa',dt:'28/03',iso:'2027-03-28',m:2,x:["[nome], nesta Páscoa toda compra acima de R$[valor] na {loja} ganha um chocolate 🐰 Vale até sábado, [data].","Doce ou mais doce? 😄 Responde 1 para chocolate ao leite e 2 para meio amargo. Já deixo o seu separado junto com a sua compra.","Últimos chocolates da campanha de Páscoa, [nome]! Corre que estão acabando."]},
+inverno:{t:'Lançamento outono-inverno',dt:'abr',iso:'2027-04-01',m:3,x:["[nome], a coleção de inverno chegou na {loja} 🍂 Botas, tênis e muita novidade. Quer ver em primeira mão?","Me responde com um número que eu mando as peças do seu estilo:\n1 — botas\n2 — tênis\n3 — clássicos para trabalhar","[nome], as peças mais procuradas da coleção já estão acabando em alguns números. Quer que eu reserve o seu?"]},
+maes:{t:'Dia das Mães',dt:'09/05',iso:'2027-05-09',m:4,x:["[nome], o Dia das Mães é dia 9/05 💐 Separei sugestões de presente por faixa de preço. Quer que eu te mande?","Monta um cartão para sua mãe aqui → [link]\nEla recebe sua mensagem e um vale para escolher na {loja}, no número e no estilo dela.","Última chance para o Dia das Mães, [nome]! Compras até sábado saem embrulhadas e com troca garantida. Quer que eu separe?"]},
+namorados:{t:'Dia dos Namorados',dt:'12/06',iso:'2027-06-12',m:5,x:["[nome], o Dia dos Namorados é sábado (12/06) ❤️ Já tem o presente? Me fala o estilo do seu amor que eu sugiro 3 opções.","Fiz um quiz de 1 minuto que descobre o presente certo para o seu amor → [link]\nMe manda o resultado que eu separo o número.","Ainda sem presente? 😅 Até sexta você compra pelo WhatsApp e retira embrulhado. Me chama!"]},
+copa:{t:'Copa do Mundo Feminina',dt:'24/06–25/07',iso:'2027-06-24',m:5,x:["[nome], a Copa do Mundo Feminina é no Brasil! ⚽ Chegaram peças verde e amarelo na {loja} para torcer com estilo.","Bolão da {loja}! Responde com seu palpite para o próximo jogo do Brasil. Quem acertar o placar ganha [prêmio].","Hoje tem jogo do Brasil, [nome]! Só hoje, quem vier com a camisa da seleção ganha [benefício]."]},
+liqinverno:{t:'Liquidação de inverno',dt:'jul',iso:'2027-07-01',m:6,x:["[nome], a liquidação de inverno da {loja} começa dia [data] ⏳ Quer entrar na lista VIP e comprar um dia antes de todo mundo?","Faltam [X] dias para a liquidação → [link]\nQuem está na lista VIP recebe acesso antecipado e a grade completa.","Começou! Você está na lista VIP, [nome], e pode comprar desde já. Me fala o número que eu separo."]},
+amigo:{t:'Dia do Amigo',dt:'20/07',iso:'2027-07-20',m:6,x:["[nome], dia 20/07 é Dia do Amigo 🤝 Traga uma amiga para a {loja}: as duas ganham [benefício] na compra.","Qual amiga mais combina com você? 😄 Me manda o nome dela e as duas ganham um cupom.","Último dia da promoção do Dia do Amigo, [nome]! Vem com a sua amiga até [hora]."]},
+pais:{t:'Dia dos Pais',dt:'08/08',iso:'2027-08-08',m:7,x:["[nome], o Dia dos Pais é domingo (8/08) 👔 Separei presentes por faixa de preço. Quer que eu te mande?","Descobre o estilo do seu pai em 1 minuto → [link]\nMe manda o resultado que eu separo os presentes certos.","Última chamada para o Dia dos Pais! Compras até sábado saem embrulhadas e com vale-troca. Quer garantir?"]},
+cliente:{t:'Dia do Cliente',dt:'15/09',iso:'2027-09-15',m:8,x:["[nome], dia 15 é Dia do Cliente e você está na nossa lista especial 💚 Obrigado por escolher a {loja}!","Separei uma roleta só para quem já comprou com a gente → [link]\nTodo prêmio vale até [data].","Seu presente do Dia do Cliente vence amanhã, [nome]! Me chama que eu reservo."]},
+primavera:{t:'Coleção primavera-verão',dt:'set',iso:'2027-09-20',m:8,x:["[nome], a coleção primavera-verão chegou 🌸 Cores novas, sandálias e tênis leves. Quer ver primeiro?","Responde com um número:\n1 — sandálias\n2 — tênis claros\n3 — peças para trabalhar\nTe mando as fotos do seu estilo.","As peças da vitrine nova estão saindo rápido, [nome]. Quer que eu separe o seu número?"]},
+criancas:{t:'Dia das Crianças',dt:'12/10',iso:'2027-10-12',m:9,x:["[nome], o Dia das Crianças é dia 12/10 🧸 Chegaram calçados infantis na {loja}. Me fala o número que eu mando as opções.","Na compra de calçado infantil, a criança gira a roleta e ganha um brinde → [link]","Último fim de semana antes do Dia das Crianças! Quer que eu separe o número?"]},
+vip:{t:'Lista VIP da Black',dt:'25/10',iso:'2027-10-25',m:9,x:["[nome], a Black Friday da {loja} vai ser diferente este ano 🖤 Quem entrar na lista VIP compra antes de todo mundo. Quer sua vaga?","Responde \"VIP\" e garanta:\n✓ acesso antecipado\n✓ cupom extra\n✓ [brinde]\nAs vagas são limitadas.","As vagas da lista VIP fecham dia [data], [nome]. Responde \"VIP\" para entrar."]},
+black:{t:'Black Friday',dt:'26/11',iso:'2027-11-26',m:10,x:["[nome], a Black Friday da {loja} começa sexta (26/11) 🖤 Separei as peças com os maiores descontos. Quer receber primeiro?","Você está na lista VIP e por isso recebe antes 🤫 Seu cupom secreto: [CUPOM]\nVale a partir de agora até [data].","Últimas horas de Black Friday, [nome]! Os números estão acabando. Me fala o seu que eu separo agora."]},
+natal:{t:'Natal',dt:'25/12',iso:'2027-12-25',m:11,x:["[nome], o Natal está chegando 🎄 Me fala para quem é o presente e quanto quer gastar que eu monto 3 opções.","Todo dia até o Natal tem um presente novo na {loja} → [link]\nAbre a janelinha de hoje!","Últimos dias para comprar antes do Natal, [nome]! Pedidos pelo WhatsApp até [data] saem embrulhados."]},
+trocas:{t:'Trocas e Ano-Novo',dt:'26–31/12',iso:'2027-12-26',m:11,x:["[nome], ganhou presente que não serviu? 😉 Na {loja} a troca é rápida. Vem até [data] e aproveita as novidades.","Ano novo, pé direito! Responde 1 para sandálias e 2 para tênis brancos, e eu te mando as opções para a virada.","Seu cupom de Natal vale em janeiro, [nome]. Não deixa vencer!"]}
+};
+const EXTRA={
+cashback:{t:'Cashback',s:'Para o cliente voltar e usar o saldo',x:["[nome], você tem R$[valor] de cashback na {loja} 💰 Ele vale até [data] em qualquer peça. Quer que eu separe algo?","Seu cashback de R$[valor] vence em 3 dias, [nome]! Com ele, aquela [peça] sai por R$[x]. Te mando a foto?","Último dia para usar seus R$[valor] de cashback! Depois de hoje ele expira. Me chama que eu resolvo."],l:['Aviso','Com sugestão','Vence hoje']},
+followup:{t:'Follow-up',s:'Quem perguntou o preço e parou de responder',x:["Oi, [nome]! Ainda está com aquela [peça] em mente? Ela ainda tem no seu número.","[nome], consegui uma condição especial para aquela [peça] até amanhã. Quer que eu reserve?","Vou liberar a reserva da [peça] hoje à noite, [nome]. Se ainda quiser, é só me responder aqui."],l:['1 dia depois','3 dias depois','Encerramento']},
+posvenda:{t:'Pós-venda',s:'Depois da compra, para vender de novo',x:["[nome], tudo certo com o seu [produto]? Qualquer coisa estou aqui 😊","[nome], sua [peça] combina muito com [produto complementar]. Quer ver uma foto do look junto?","Que bom ter você como cliente, [nome]! Se gostou, avalia a {loja} no Google: [link]. Ajuda demais."],l:['2 dias depois','7 dias depois','Avaliação']},
+aniversario:{t:'Aniversário',s:'O disparo com maior resposta do ano',x:["Feliz aniversário, [nome]! 🎂 A {loja} preparou um presente: [benefício] para usar até o fim do mês.","Seu presente de aniversário está te esperando, [nome] 🎁 Raspa aqui e descobre → [link]","Seu presente de aniversário vence em 3 dias, [nome]! Quer que eu separe algo?"],l:['No dia','Interativo','Lembrete']},
+reativacao:{t:'Cliente sumido',s:'Quem não compra há mais de 6 meses',x:["[nome], faz tempo que não te vejo por aqui! Chegaram novidades no seu estilo. Posso te mostrar?","Sentimos sua falta, [nome] 💚 Para você voltar, separei [benefício] válido até [data].","[nome], última mensagem, prometo 😄 Seu benefício de volta vence amanhã. Se quiser, é só responder."],l:['Reaproximação','Com benefício','Encerramento']},
+reposicao:{t:'Reposição e novidade',s:'Chegou o número ou uma peça com a cara do cliente',x:["[nome], aquela [peça] que você procurou voltou no seu número! Quer que eu reserve?","Chegou novidade com a sua cara, [nome] 👀 Posso te mandar a foto?","A reposição já está acabando, [nome]. Reservo a sua até amanhã?"],l:['Voltou o número','Novidade','Urgência']}
+};
+const APPS={
+roleta:{t:'Roleta de prêmios',d:'O cliente gira e ganha um prêmio. Para resgatar, manda o print no WhatsApp da loja.',u:['Liquidação de verão','Dia do Cliente','Dia das Crianças'],h:['Defina 6 prêmios. Todos precisam valer a pena: nada de "tente de novo".','Coloque validade curta (3 a 7 dias) para gerar urgência.','Mande o link no disparo interativo e nos stories.','O resgate sempre passa pelo WhatsApp, para o vendedor puxar a conversa.']},
+quiz:{t:'Quiz de estilo',d:'4 perguntas rápidas e o resultado indica um estilo e 3 produtos da loja. Ótimo para quem não sabe o que dar de presente.',u:['Carnaval','Dia dos Namorados','Dia dos Pais'],h:['Troque as perguntas pelo tema da data.','Cada resultado aponta para 3 produtos que você tem em estoque.','Peça para o cliente mandar o resultado no WhatsApp.','O vendedor responde com as fotos e o número disponível.']},
+raspadinha:{t:'Raspadinha',d:'O cliente raspa na tela e descobre o cupom. A surpresa faz todo mundo querer jogar.',u:['Dia do Consumidor','Aniversário','Natal'],h:['Todo mundo ganha: varie entre desconto, frete e brinde.','Mostre o código do cupom ao raspar.','Validade de 3 dias.','Use também como presente de aniversário.']},
+contagem:{t:'Contagem regressiva',d:'Página com o relógio até o início da ação e um campo para entrar na lista VIP.',u:['Black Friday','Liquidação de inverno','Carnaval'],h:['Abra a lista 2 a 3 semanas antes da data.','Dê uma vantagem clara a quem entrar: comprar antes ou cupom extra.','Repita o link nos stories todos os dias, com o número de dias que faltam.','No dia, mande o cupom só para a lista.']},
+cartao:{t:'Cartão interativo',d:'O cliente escreve uma mensagem para quem vai receber o presente. O cartão vai com um vale para escolher na loja.',u:['Dia das Mães','Dia dos Pais','Natal'],h:['Quem recebe escolhe o número e o estilo: zero troca.','O vale pode ter valor fechado (R$100, R$200...).','Imprima o cartão e entregue junto com o vale.','Divulgue a ideia como "o presente que nunca erra".']}
+};
+const TAC=[
+{k:'pa',t:'Complemento obrigatório',p:'Todo calçado vendido ganha a oferta de um item pequeno: meia, palmilha ou kit de limpeza. É barato, faz sentido e quase ninguém recusa.',h:'Deixe os complementos ao lado do caixa e coloque meta de oferta: 100% das vendas.',s:'Para o seu tênis durar mais, quer levar o kit de limpeza? Junto com o tênis sai por R$[x].'},
+{k:'pa',t:'Leve 2 com desconto progressivo',p:'A segunda peça com 10% e a terceira com 20%. O cliente sente que está ganhando e o PA sobe sem derrubar a margem.',h:'Aplique em linhas com estoque alto ou em datas como Dia das Mães e Natal.',s:'Hoje a segunda peça sai com 10% e a terceira com 20%. Quer aproveitar para levar a sandália também?'},
+{k:'pa',t:'Look completo no provador',p:'O vendedor nunca leva só a peça pedida. Leva junto o que completa o look: bolsa, cinto, meia ou uma segunda opção.',h:'Combine com a equipe: toda ida ao provador leva pelo menos 1 peça a mais.',s:'Trouxe também esse cinto que fecha o look. Prova junto para ver como fica.'},
+{k:'tk',t:'Brinde acima de um valor',p:'Defina um valor 20% a 30% acima do seu ticket médio atual e dê um brinde a partir dele. Se o ticket é R$250, o brinde vem acima de R$320.',h:'Use a calculadora acima para achar seu ticket e escolha um brinde que custe pouco e pareça valioso.',s:'Faltam só R$40 para você ganhar a bolsinha de brinde. Quer ver uma meia ou uma palmilha?'},
+{k:'tk',t:'Regra das 3 opções',p:'Sempre mostre 3 faixas de preço: boa, melhor e a melhor de todas. Começando pela do meio, muita gente sobe uma faixa.',h:'Treine a equipe a nunca mostrar só uma opção, nem começar pela mais barata.',s:'Separei três: essa é a mais vendida, essa tem o solado mais confortável e essa é a top da coleção.'},
+{k:'tk',t:'Frete grátis acima de X',p:'Nas vendas pelo WhatsApp, frete grátis só a partir de um valor. O cliente completa o carrinho para não pagar entrega.',h:'Coloque o valor um pouco acima do ticket médio das vendas online.',s:'Com mais uma peça você passa de R$[valor] e o frete sai grátis. Quer que eu sugira algo?'},
+{k:'am',t:'Cashback com uso mínimo',p:'Devolva 10% da compra em cashback, para usar em 30 dias em compras acima de um valor. Gera retorno e puxa o ticket da próxima compra.',h:'Controle pelo CRM e use os disparos de cashback da aba Disparos.',s:'Você ganhou R$[valor] de cashback para usar até [data] em compras acima de R$[valor].'},
+{k:'pa',t:'Meta de PA por vendedor',p:'O que é medido melhora. Mostre o PA de cada vendedor no quadro da loja e faça um ranking semanal com prêmio pequeno.',h:'PA de cada vendedor = peças vendidas por ele ÷ vendas dele. Atualize toda segunda.',s:'Meta da semana: PA de 1,6. Quem bater ganha [prêmio].'},
+{k:'am',t:'Kits prontos',p:'Combos com preço fechado (tênis + meia + palmilha) expostos na vitrine e enviados no WhatsApp. O cliente compra o kit sem precisar decidir item por item.',h:'Monte 3 kits por estação e coloque o preço do kit menor que a soma das peças.',s:'Esse é o kit corrida: tênis, meia e palmilha. Separado sai R$[x], no kit sai R$[y].'},
+{k:'tk',t:'Pós-venda com complemento',p:'Sete dias depois da compra, mande uma mensagem sugerindo uma peça que combina com o que o cliente levou.',h:'Use o disparo de pós-venda e mande a foto do look montado.',s:'[nome], aquela sandália combina demais com essa bolsa que chegou. Quer ver uma foto do look junto?'}
+];
+
+/* ---------- HELPERS ---------- */
+const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
+let LOJA='';
+try{LOJA=localStorage.getItem('cal27-loja')||''}catch(e){}
+const lj=()=>LOJA.trim()||'[loja]';
+const fill=s=>s.split('{loja}').join(lj());
+const esc=s=>s.replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+function toast(t){const e=$('#toast');e.textContent=t;e.classList.add('on');clearTimeout(e._t);e._t=setTimeout(()=>e.classList.remove('on'),1800)}
+function copyTxt(t,btn,msg){
+  const done=()=>{toast(msg||'Mensagem copiada');if(btn){btn.classList.add('ok');btn.innerHTML=ICO.ok+'Copiado';setTimeout(()=>{btn.classList.remove('ok');btn.innerHTML=ICO.cp+'Copiar'},1600)}};
+  if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(t).then(done,()=>fb())}else fb();
+  function fb(){const a=document.createElement('textarea');a.value=t;a.style.position='fixed';a.style.opacity=0;document.body.appendChild(a);a.select();try{document.execCommand('copy')}catch(e){}a.remove();done()}
+}
+const ICO={cp:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="9" y="9" width="12" height="12" rx="2.5"/><path d="M5 15H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v1"/></svg>',ok:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>',ar:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>',x:'<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg>',wa:'<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.5-3.9-4.7-4.1-.1-.2-1.1-1.5-1.1-2.9s.7-2.1 1-2.4c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.3 0 .5l-.4.6-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l2 1c.3.1.5.2.5.3.1.2.1.7-.1 1.3z"/></svg>'};
+const art={
+roleta:'<svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="44" fill="#0F2A1F" stroke="#3DDC97" stroke-width="3"/><g stroke="#3DDC97" stroke-width="2"><path d="M50 6v88M6 50h88M19 19l62 62M81 19 19 81"/></g><circle cx="50" cy="50" r="9" fill="#0C0C0D" stroke="#3DDC97" stroke-width="3"/><path d="M42 0h16L50 14z" fill="#F3F2EF"/></svg>',
+quiz:'<svg viewBox="0 0 100 100"><rect x="14" y="10" width="72" height="80" rx="12" fill="#0F2A1F" stroke="#3DDC97" stroke-width="3"/><rect x="24" y="24" width="52" height="12" rx="6" fill="#3DDC97"/><rect x="24" y="44" width="52" height="11" rx="5.5" fill="none" stroke="#3DDC97" stroke-width="2"/><rect x="24" y="61" width="52" height="11" rx="5.5" fill="none" stroke="#3DDC97" stroke-width="2"/></svg>',
+raspadinha:'<svg viewBox="0 0 100 100"><rect x="8" y="22" width="84" height="56" rx="10" fill="#0F2A1F" stroke="#3DDC97" stroke-width="3"/><path d="M8 32c20-8 30 22 50 6s26-10 34 2v28a10 10 0 0 1-10 10H18A10 10 0 0 1 8 68z" fill="#5b5b62"/><text x="50" y="47" text-anchor="middle" font-size="16" font-weight="800" fill="#3DDC97" font-family="sans-serif">15%</text></svg>',
+contagem:'<svg viewBox="0 0 100 100"><circle cx="50" cy="54" r="38" fill="#0F2A1F" stroke="#3DDC97" stroke-width="3"/><path d="M50 54V30M50 54l16 10" stroke="#3DDC97" stroke-width="4" stroke-linecap="round"/><rect x="42" y="6" width="16" height="9" rx="3" fill="#3DDC97"/></svg>',
+cartao:'<svg viewBox="0 0 100 100"><rect x="10" y="24" width="80" height="56" rx="10" fill="#F4EDE4"/><circle cx="76" cy="36" r="16" fill="#E9B9A6" opacity=".8"/><rect x="20" y="40" width="34" height="7" rx="3.5" fill="#2A2119"/><rect x="20" y="53" width="48" height="4" rx="2" fill="#2A2119" opacity=".4"/><rect x="58" y="64" width="24" height="9" rx="3" fill="#2A2119"/></svg>',
+advento:'<svg viewBox="0 0 100 100"><g fill="#0F2A1F" stroke="#3DDC97" stroke-width="2"><rect x="8" y="8" width="24" height="24" rx="5"/><rect x="38" y="8" width="24" height="24" rx="5"/><rect x="68" y="8" width="24" height="24" rx="5"/><rect x="8" y="38" width="24" height="24" rx="5"/><rect x="68" y="38" width="24" height="24" rx="5"/><rect x="8" y="68" width="24" height="24" rx="5"/><rect x="38" y="68" width="24" height="24" rx="5"/><rect x="68" y="68" width="24" height="24" rx="5"/></g><rect x="38" y="38" width="24" height="24" rx="5" fill="#3DDC97"/></svg>'};
+
+/* ---------- NAV ---------- */
+function go(v){
+  $$('.view').forEach(e=>e.classList.toggle('on',e.id==='v-'+v));
+  $$('#tabs button').forEach(b=>b.classList.toggle('on',b.dataset.go===v));
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+document.addEventListener('click',e=>{const b=e.target.closest('[data-go]');if(b)go(b.dataset.go)});
+
+const PLANRAW=`01-02|E|Começa a liquidação de verão
+01-04|D|Disparo 1 da liquidação: aviso com o desconto
+01-06|S|Vitrine da liquidação com preços nos stories
+01-08|D|Disparo da roleta para a lista de clientes
+01-11|A|Montar a área de calçado escolar na loja
+01-13|D|Disparo volta às aulas: "me fala o número do seu filho"
+01-15|S|Enquete: "Seu filho volta às aulas com tênis novo?"
+01-18|P|Começar o Carnaval: conferir rasteiras e tênis confortáveis
+01-20|D|Disparo de Carnaval: chegaram as peças de bloco
+01-22|D|Últimos dias da liquidação
+01-25|S|Looks de bloco com peças da loja
+01-27|D|Disparo do quiz "Qual seu look de bloco?"
+01-30|A|Pré-Carnaval: vitrine de festa no fim de semana
+02-01|S|Contagem regressiva do Carnaval nos stories
+02-02|D|Disparo: rasteiras e tênis para aguentar o bloco
+02-04|D|Última chamada antes do Carnaval
+02-05|A|Peças de bloco na entrada da loja
+02-06|E|Começa o Carnaval
+02-09|E|Terça de Carnaval
+02-10|E|Quarta-feira de Cinzas
+02-15|P|Revisar o que sobrou do verão
+02-17|D|Disparo de reposição e novidades
+02-22|P|Planejar o Dia da Mulher e o Dia do Consumidor
+02-24|S|Primeiras peças de outono chegando
+03-01|P|Preparar os mimos do Dia da Mulher
+03-03|D|Convite para buscar o mimo do Dia da Mulher
+03-08|E|Dia da Mulher
+03-08|S|Homenagem com clientes reais da loja
+03-09|D|Aviso: condições do Dia do Consumidor
+03-12|D|Disparo da raspadinha do consumidor
+03-15|E|Dia do Consumidor
+03-17|D|Lembrete: seu cupom vence hoje
+03-20|S|Começa o outono: peças novas
+03-22|D|Páscoa: compre e ganhe um chocolate
+03-26|D|Últimos chocolates da campanha
+03-28|E|Páscoa
+03-30|P|Planejar o lançamento de inverno
+04-01|E|Lançamento da coleção outono-inverno
+04-05|D|Disparo interativo da coleção (1, 2 ou 3)
+04-07|S|"Esse ou esse?" com duas peças por dia
+04-12|D|Peças mais procuradas acabando
+04-16|A|Vitrine de inverno montada
+04-19|P|Separar presentes de Dia das Mães por faixa de preço
+04-21|E|Tiradentes
+04-22|D|Dia das Mães: sugestões por faixa de preço
+04-26|S|Guia de presentes para a mãe
+04-28|D|Disparo do cartão interativo
+05-01|E|Dia do Trabalho
+05-03|D|Lembrete Dia das Mães + troca garantida
+05-05|S|Embrulho grátis e troca garantida
+05-06|D|Última chamada do Dia das Mães
+05-08|A|Sábado de pico: reforçar equipe e embrulhos
+05-09|E|Dia das Mães
+05-11|D|Pós-venda: "Ela gostou?"
+05-17|P|Planejar o Dia dos Namorados
+05-25|D|Namorados: sugestões para o casal
+05-27|E|Corpus Christi
+05-31|S|Presentes para casal
+06-02|D|Disparo do quiz do casal
+06-08|D|Última chamada do Dia dos Namorados
+06-11|A|Presentes embrulhados prontos no caixa
+06-12|E|Dia dos Namorados
+06-15|D|Copa Feminina: peças verde e amarelo
+06-21|E|Começa o inverno
+06-22|S|Bolão da loja para o jogo do Brasil
+06-24|E|Abertura da Copa do Mundo Feminina
+06-28|P|Abrir a lista VIP da liquidação de inverno
+06-29|D|Convite para a lista VIP
+07-01|S|Contagem regressiva da liquidação
+07-05|D|Lembrete: faltam poucos dias, entre na lista VIP
+07-07|D|Lista VIP compra antes
+07-08|E|Começa a liquidação de inverno
+07-13|D|Dia do Amigo: traga uma amiga
+07-20|E|Dia do Amigo
+07-21|P|Começar o Dia dos Pais
+07-22|D|Dia dos Pais: presentes por faixa de preço
+07-25|E|Final da Copa Feminina
+07-26|E|Dia dos Avós
+07-27|S|Enquete: "Seu pai é de qual tipo?"
+07-29|D|Disparo do quiz do pai
+08-03|D|Lembrete Dia dos Pais + vale-troca
+08-05|D|Última chamada do Dia dos Pais
+08-07|A|Sábado de pico: embrulho e vale-troca
+08-08|E|Dia dos Pais
+08-10|D|Pós-venda: "Seu pai gostou?"
+08-16|P|Separar quem comprou nos últimos 12 meses
+08-23|S|Prévia da coleção de primavera
+08-30|P|Preparar a roleta do Dia do Cliente
+09-01|D|Coleção primavera: disparo 1, 2 ou 3
+09-07|E|Independência
+09-08|D|Aviso do Dia do Cliente para a base
+09-13|D|Roleta do cliente VIP
+09-15|E|Dia do Cliente
+09-16|D|Lembrete: seu prêmio vence amanhã
+09-23|E|Começa a primavera
+09-25|P|Começar o Dia das Crianças
+09-28|D|Dia das Crianças: chegaram os infantis
+10-04|S|Calçados infantis nos stories
+10-06|D|Roleta infantil com brinde
+10-09|A|Brinde infantil no caixa
+10-12|E|Dia das Crianças
+10-15|E|Dia do Professor
+10-18|P|Definir a vantagem da lista VIP da Black
+10-25|D|Convite para o grupo VIP da Black
+10-27|S|"O que vem na Black", sem mostrar preço
+10-29|D|Lembrete: vagas da lista VIP
+11-01|S|Contagem regressiva da Black nos stories
+11-03|D|Últimas vagas da lista VIP
+11-08|P|Separar estoque e definir os descontos
+11-15|D|Aviso da Black para toda a base
+11-22|D|Lembrete: faltam 4 dias
+11-25|D|Cupom secreto para a lista VIP
+11-26|E|Black Friday
+11-27|S|Movimento da loja ao vivo nos stories
+11-28|D|Última chamada da Black
+11-29|E|Cyber Monday
+11-30|E|1ª parcela do 13º
+12-01|D|Natal: "para quem é o presente?"
+12-04|S|Guia de presentes por faixa de preço
+12-07|A|Montar a ilha de presentes embrulhados
+12-09|D|Sugestões de presente por faixa de preço
+12-13|S|Caixinha: "Para quem é o presente?"
+12-15|D|Lembrete com o 13º
+12-18|D|Disparo da raspadinha de Natal
+12-20|E|2ª parcela do 13º
+12-21|D|Última chamada: pedidos pelo WhatsApp até 23/12
+12-23|A|Horário estendido e equipe reforçada
+12-25|E|Natal
+12-27|D|Trocas e Ano-Novo
+12-29|S|Looks para a virada
+02-19|A|Bazar secreto: peças paradas da liquidação
+05-04|A|Live shop do Dia das Mães
+06-09|A|Live shop do Dia dos Namorados
+08-20|A|Bazar secreto do inverno
+10-20|P|Criar o grupo VIP da Black
+11-23|A|Live shop: esquenta da Black
+12-15|A|Live shop de Natal`;
+const TY={E:['Data','#3ddc97'],D:['Disparo','#7cc4ff'],S:['Stories','#f472b6'],A:['Ação na loja','#e8c07d'],P:['Preparação','#a1a1aa']};
+const DEFPLAN={};PLANRAW.split('\n').forEach(l=>{const[d,t,x]=l.split('|');const k='2027-'+d;(DEFPLAN[k]=DEFPLAN[k]||[]).push({t,x})});
+let PL={};try{PL=JSON.parse(localStorage.getItem('cal27-plan')||'{}')}catch(e){}
+const savePL=()=>{try{localStorage.setItem('cal27-plan',JSON.stringify(PL))}catch(e){}};
+const dayItems=d=>PL[d]||DEFPLAN[d]||[];
+const iso=dt=>dt.getFullYear()+'-'+String(dt.getMonth()+1).padStart(2,'0')+'-'+String(dt.getDate()).padStart(2,'0');
+const DW=['domingo','segunda','terça','quarta','quinta','sexta','sábado'],MN=['janeiro','fevereiro','março','abril','maio','junho','julho','agosto','setembro','outubro','novembro','dezembro'];
+const pDate=s=>{const[y,m,d]=s.split('-').map(Number);return new Date(y,m-1,d)};
+const longD=s=>{const t=pDate(s),w=DW[t.getDay()];return w[0].toUpperCase()+w.slice(1)+', '+t.getDate()+' de '+MN[t.getMonth()]};
+const shortD=s=>{const t=pDate(s);return DW[t.getDay()].slice(0,3)+' · '+String(t.getDate()).padStart(2,'0')+'/'+String(t.getMonth()+1).padStart(2,'0')};
+function refDate(){const t=new Date();t.setHours(0,0,0,0);const a=new Date(2027,0,1),b=new Date(2027,11,31);return t<a?a:(t>b?a:t)}
+function nextWithItems(from){const t=new Date(from);for(let i=0;i<400;i++){const k=iso(t);if(t.getFullYear()!==2027)break;if(dayItems(k).length)return k;t.setDate(t.getDate()+1)}return '2027-01-02'}
+function evFor(k){const e=Object.entries(EV).filter(([_,v])=>v.iso>=k).sort((a,b)=>a[1].iso<b[1].iso?-1:1)[0];return e?e[0]:'verao'}
+const itemHTML=it=>`<div class="it"><i style="background:${TY[it.t][1]}"></i><div><span style="color:${TY[it.t][1]}">${TY[it.t][0]}</span><p>${esc(it.x)}</p></div></div>`;
+
+/* ---------- HOME ---------- */
+const lojaIn=$('#loja');lojaIn.value=LOJA;
+lojaIn.addEventListener('input',()=>{LOJA=lojaIn.value;try{localStorage.setItem('cal27-loja',LOJA)}catch(e){}renderDisp();renderEstr();hello()});
+function hello(){$('#hello').textContent=LOJA.trim()?'Plano de vendas 2027 · '+LOJA.trim():'Plano de vendas 2027 · Moda e calçados'}
+function nextEvent(){
+  const now=new Date();const list=Object.entries(EV).map(([k,v])=>({k,...v,date:new Date(v.iso+'T00:00:00')})).sort((a,b)=>a.date-b.date);
+  return list.find(x=>x.date>=new Date(now.toDateString()))||list[0];
+}
+function openDay(k){const t=pDate(k);go('calendario');setCal('mes');selMonth(t.getMonth(),k);setTimeout(()=>{const g=$('#dayDet');if(g)g.scrollIntoView({behavior:'smooth',block:'center'})},350)}
+function renderHome(){
+  hello();
+  const ref=refDate(),todayK=iso(new Date()),k=nextWithItems(ref),its=dayItems(k),isToday=k===todayK;
+  const ev=evFor(k);
+  $('#today').innerHTML=`<div class="tl1"><span class="pill">${isToday?'Hoje':'Próxima ação'}</span><span class="tdate">${longD(k)}</span></div><div class="tits">${its.map(itemHTML).join('')}</div><div class="row"><button class="btn p" id="tMsg">Pegar o disparo ${ICO.ar}</button><button class="btn s" id="tCal">Ver no calendário</button></div>`;
+  $('#tMsg').onclick=()=>{go('disparos');selDisp(ev)};$('#tCal').onclick=()=>openDay(k);
+  const s=new Date(Math.max(ref,new Date(new Date().toDateString())));if(s.getFullYear()>2027)s.setTime(ref);let rows='',t=new Date(s);
+  for(let i=0;i<7;i++){const kk=iso(t),ii=dayItems(kk);if(t.getFullYear()===2027)rows+=`<button class="wrow" data-k="${kk}"><span class="wd"><b>${t.getDate()}</b>${DW[t.getDay()].slice(0,3)}</span><span class="wi">${ii.length?ii.map(x=>`<span><i style="background:${TY[x.t][1]}"></i>${esc(x.x)}</span>`).join(''):'<span class="free">Dia livre</span>'}</span></button>`;t.setDate(t.getDate()+1)}
+  $('#week').innerHTML=rows;$$('#week .wrow').forEach(b=>b.onclick=()=>openDay(b.dataset.k));
+  $('#weekCal').onclick=()=>{go('calendario');setCal('mes');selMonth(s.getMonth())};
+  const n=nextEvent();const days=Math.max(0,Math.ceil((n.date-new Date(new Date().toDateString()))/864e5));
+  $('#nextDays').innerHTML=days+'<small>'+(days===1?'dia':'dias')+'</small>';
+  $('#nextName').textContent=n.t;
+  $('#nextWhen').textContent=n.dt+' · comece a divulgar em '+MESES[n.m].c;
+  $('#nextGo').onclick=()=>{go('calendario');setCal('mes');selMonth(n.m)};
+  const total=(Object.keys(EV).length+Object.keys(EXTRA).length)*3;
+  $('#cntMsgs').textContent=total+' mensagens prontas';
+}
+
+/* ---------- CALENDAR ---------- */
+function setCal(m){$$('.seg button').forEach(b=>b.classList.toggle('on',b.dataset.cv===m));$('#calAno').style.display=m==='ano'?'':'none';$('#calMes').style.display=m==='mes'?'':'none'}
+$$('.seg button').forEach(b=>b.onclick=()=>setCal(b.dataset.cv));
+$('#calAno').innerHTML=MESES.map((m,i)=>`<button class="card mc" data-m="${i}"><div class="top"><span class="nm">${m.n}</span><span class="num">${String(i+1).padStart(2,'0')}</span></div><div class="th">${m.t}</div><ul>${m.d.slice(0,3).map(d=>`<li><b>${d[0]}</b>${d[1]}</li>`).join('')}</ul><span class="pill" style="align-self:flex-start">${m.a==='disparo'?'Disparo interativo':APPS[m.a].t}</span></button>`).join('');
+$$('#calAno .mc').forEach(b=>b.onclick=()=>{setCal('mes');selMonth(+b.dataset.m)});
+$('#mchips').innerHTML=MESES.map((m,i)=>`<button class="chip" data-m="${i}">${m.n}</button>`).join('');
+$$('#mchips .chip').forEach(b=>b.onclick=()=>selMonth(+b.dataset.m));
+let SELD=null;
+function selMonth(i,day){
+  const m=MESES[i];
+  $$('#mchips .chip').forEach(b=>b.classList.toggle('on',+b.dataset.m===i));
+  const ch=$('#mchips .chip.on');if(ch)ch.scrollIntoView({inline:'center',block:'nearest',behavior:'smooth'});
+  const appBtn=m.a==='disparo'?`<button class="btn p" onclick="go('disparos');selDisp('${m.ev[0]}')">Ver o disparo interativo ${ICO.ar}</button>`:`<button class="btn p" onclick="openApp('${m.a}')">Abrir ${APPS[m.a].t.toLowerCase()} ${ICO.ar}</button>`;
+  $('#mdet').innerHTML=`<div class="mdet">
+    <div class="card mhero" data-n="${String(i+1).padStart(2,'0')}"><div class="nm">${m.n}</div><h3>${m.t}</h3><p>${m.obj}</p></div>
+    <div class="card blk gblk"><div class="ghead"><div class="lb" style="margin:0">Plano dia a dia</div><div class="legend">${Object.values(TY).map(t=>`<span><i style="background:${t[1]}"></i>${t[0]}</span>`).join('')}</div></div><div class="cgrid" id="cgrid"></div><div id="dayDet"></div></div>
+    <div class="card blk"><div class="lb">Datas do mês</div><ul class="tl">${m.d.map(d=>`<li><b>${d[0]}</b><span>${d[1]}</span></li>`).join('')}</ul></div>
+    <div class="card blk"><div class="lb">Comece a divulgar</div><div class="start g">${m.c}</div><p style="color:var(--mut);margin-top:8px;font-size:14px">A mensagem vai em 3 tempos: aviso, interativo e última chamada.</p></div>
+    <div class="card blk act"><div class="lb">Ação interativa</div><p>${m.ad}</p><div class="row">${appBtn}</div></div>
+    <div class="card blk"><div class="kv"><div><span>Nos stories</span><p>${m.st}</p></div><div><span>Disparos do mês</span><p>${m.ev.map(k=>EV[k].t).join(' · ')}</p></div></div><div class="row" style="margin-top:16px"><button class="btn s" onclick="go('disparos');selDisp('${m.ev[0]}')">Ver disparos prontos</button></div></div>
+  </div>`;
+  renderGrid(i,day);
+}
+selMonth(nextEvent().m);
+
+
+function renderGrid(mi,day){
+  const first=new Date(2027,mi,1),off=(first.getDay()+6)%7,n=new Date(2027,mi+1,0).getDate(),tk=iso(new Date());
+  if(!day||pDate(day).getMonth()!==mi){day=null;for(let d=1;d<=n;d++){const k=iso(new Date(2027,mi,d));if(dayItems(k).length&&k>=iso(refDate())){day=k;break}}if(!day)for(let d=1;d<=n;d++){const k=iso(new Date(2027,mi,d));if(dayItems(k).length){day=k;break}}}
+  SELD=day;
+  let h=['Seg','Ter','Qua','Qui','Sex','Sáb','Dom'].map(x=>`<div class="cw">${x}</div>`).join('');
+  for(let i=0;i<off;i++)h+='<div class="cd0"></div>';
+  for(let d=1;d<=n;d++){const k=iso(new Date(2027,mi,d)),its=dayItems(k),ed=!!PL[k];
+    h+=`<button class="cday ${k===SELD?'sel':''} ${k===tk?'tod':''} ${its.some(x=>x.t==='E')?'ev':''}" data-k="${k}"><b>${d}${ed?'<em title="Editado pela loja">•</em>':''}</b><span class="dots">${its.map(x=>`<i style="background:${TY[x.t][1]}"></i>`).join('')}</span><span class="txts">${its.slice(0,2).map(x=>`<span style="--c:${TY[x.t][1]}">${esc(x.x)}</span>`).join('')}${its.length>2?`<span class="more">+${its.length-2}</span>`:''}</span></button>`}
+  $('#cgrid').innerHTML=h;
+  $$('#cgrid .cday').forEach(b=>b.onclick=()=>{SELD=b.dataset.k;$$('#cgrid .cday').forEach(x=>x.classList.toggle('sel',x===b));renderDay(false)});
+  renderDay(false);
+}
+function renderDay(edit){
+  const k=SELD,el=$('#dayDet');if(!k){el.innerHTML='';return}
+  const its=dayItems(k).map(x=>({...x}));
+  if(!edit){
+    el.innerHTML=`<div class="dhead"><h3>${longD(k)}</h3><button class="btn s sm" id="dEdit">Editar dia</button></div>${its.length?`<div class="tits">${its.map(itemHTML).join('')}</div>`:'<p class="free">Nenhuma ação neste dia. Toque em "Editar dia" para adicionar.</p>'}${its.some(x=>x.t==='D')?`<button class="btn p sm" id="dMsg" style="margin-top:12px">Pegar o disparo pronto ${ICO.ar}</button>`:''}`;
+    $('#dEdit').onclick=()=>renderDay(true);const dm=$('#dMsg');if(dm)dm.onclick=()=>{go('disparos');selDisp(evFor(k))};
+  }else{
+    const row=(x,i)=>`<div class="erow" data-i="${i}"><select>${Object.entries(TY).map(([t,v])=>`<option value="${t}" ${x.t===t?'selected':''}>${v[0]}</option>`).join('')}</select><input value="${esc(x.x)}" placeholder="Descreva a ação"><button class="del" title="Apagar">${ICO.x}</button></div>`;
+    el.innerHTML=`<div class="dhead"><h3>${longD(k)}</h3></div><div class="erows">${its.map(row).join('')}</div><button class="add">+ Adicionar ação</button><div class="row" style="margin-top:12px"><button class="btn p sm" id="dSave">Salvar</button><button class="btn s sm" id="dCancel">Cancelar</button>${PL[k]?'<button class="rst" id="dRst">Voltar para a sugestão</button>':''}</div>`;
+    const wire=()=>$$('#dayDet .del').forEach(b=>b.onclick=()=>b.closest('.erow').remove());wire();
+    el.querySelector('.add').onclick=()=>{el.querySelector('.erows').insertAdjacentHTML('beforeend',row({t:'D',x:''},Date.now()));wire();const ins=$$('#dayDet .erow input');ins[ins.length-1].focus()};
+    $('#dCancel').onclick=()=>renderDay(false);
+    $('#dSave').onclick=()=>{PL[k]=$$('#dayDet .erow').map(r=>({t:r.querySelector('select').value,x:r.querySelector('input').value.trim()})).filter(x=>x.x);savePL();renderGrid(pDate(k).getMonth(),k);renderHome();toast('Dia salvo')};
+    const r=$('#dRst');if(r)r.onclick=()=>{delete PL[k];savePL();renderGrid(pDate(k).getMonth(),k);renderHome();toast('Sugestão restaurada')};
+  }
+}
+
+/* ---------- DISPAROS ---------- */
+let DSEL='all';
+function renderSide(){
+  const ev=Object.entries(EV),ex=Object.entries(EXTRA);
+  $('#dside').innerHTML=`<button data-d="all" class="${DSEL==='all'?'on':''}">Todas as datas<small>${ev.length}</small></button><h4>Datas de 2027</h4>${ev.map(([k,v])=>`<button data-d="${k}" class="${DSEL===k?'on':''}">${v.t}<small>${v.dt}</small></button>`).join('')}<h4>Dia a dia da loja</h4>${ex.map(([k,v])=>`<button data-d="${k}" class="${DSEL===k?'on':''}">${v.t}<small>3</small></button>`).join('')}`;
+  $$('#dside button').forEach(b=>b.onclick=()=>selDisp(b.dataset.d));
+}
+function groupHTML(k,v,isEx){
+  const labs=isEx?v.l:L3;
+  return `<div class="dgroup"><div class="gh"><h3>${v.t}</h3><span>${isEx?v.s:MESES[v.m].n+' · '+v.dt}</span></div><div class="msgs">${v.x.map((t,i)=>{const tx=fill(t);return `<div class="card msg"><div class="mh"><span class="pill ${i===1?'':'n'}">${labs[i]}</span><span style="color:var(--dim);font-size:12px">Opção ${i+1}</span></div><div class="bubble">${esc(tx)}</div><button class="copy" data-t="${esc(tx)}">${ICO.cp}Copiar</button></div>`}).join('')}</div></div>`;
+}
+function renderDisp(){
+  let h='';
+  if(DSEL==='all')h=Object.entries(EV).map(([k,v])=>groupHTML(k,v,false)).join('');
+  else if(EV[DSEL])h=groupHTML(DSEL,EV[DSEL],false);
+  else h=groupHTML(DSEL,EXTRA[DSEL],true);
+  $('#dlist').innerHTML=h;
+  $$('#dlist .copy').forEach(b=>b.onclick=()=>copyTxt(b.dataset.t,b));
+}
+function selDisp(k){DSEL=k;renderSide();renderDisp();const on=$('#dside button.on');if(on&&window.innerWidth<=820)on.scrollIntoView({inline:'center',block:'nearest'})}
+selDisp('all');
+
+/* ---------- APPS ---------- */
+const order=['roleta','raspadinha','contagem','quiz','cartao'];
+$('#agrid').innerHTML=order.map(k=>{const a=APPS[k];return `<button class="card app" onclick="openApp('${k}')"><div class="art">${art[k]}</div><div class="bd"><h3>${a.t}</h3><p>${a.d}</p><div class="use">${a.u.map(u=>`<span class="pill n">${u}</span>`).join('')}</div><span class="open">Testar e personalizar ${ICO.ar.replace('<svg','<svg width="16" height="16"')}</span></div></button>`}).join('');
+
+const BASE={cor:'#3ddc97',loja:'',wpp:''};
+const DEF={
+roleta:{...BASE,titulo:'Gire e descubra seu prêmio',premios:['10% OFF','Frete grátis','15% OFF','Brinde','20% OFF','Meia grátis'],validade:'3 dias'},
+raspadinha:{...BASE,tema:'Dia do Consumidor',titulo:'Raspe e descubra seu presente',premio:'15% OFF',codigo:'CONSUMIDOR15',validade:'3 dias'},
+contagem:{...BASE,evento:'Black Friday',data:'2027-11-26T00:00',oferta:'Entre na lista VIP e compre um dia antes, com cupom extra.',botao:'Quero ser VIP',sucesso:'Você está na lista VIP! Seu cupom chega no WhatsApp antes da abertura.'},
+quiz:{...BASE,titulo:'Qual seu look de bloco?',q:[{p:'Como você curte o Carnaval?',o:['Bloco o dia todo, sem parar','Festa à noite, com produção','Fantasia completa, sempre']},{p:'O que não pode faltar?',o:['Conforto no pé','Um brilho','Cor, muita cor']},{p:'Seu calçado ideal para a folia:',o:['Tênis leve','Rasteira com detalhe','O que combinar com a fantasia']},{p:'Depois do bloco você...',o:['Emenda no próximo','Vai para o after','Já planeja a fantasia do ano que vem']}],r:[{n:'Conforto total',d:'Você aguenta o bloco inteiro e ainda dança no último.',p:'Tênis leve, Meia esportiva, Pochete'},{n:'Brilho na medida',d:'Seu look chama atenção sem perder o estilo.',p:'Rasteira com brilho, Bolsa transversal, Acessório dourado'},{n:'Fantasia raiz',d:'Para você, Carnaval é sobre criar o personagem.',p:'Sandália colorida, Tiara, Meia divertida'}]},
+cartao:{...BASE,ocasiao:'Dia das Mães',para:'minha mãe',msg:'Obrigado por tudo. Escolhe o que você mais gostar, do seu jeito e no seu número.',valores:'100, 150, 200, 300'}
+};
+let CFG={};try{CFG=JSON.parse(localStorage.getItem('cal27-cfg')||'{}')}catch(e){}
+const clone=o=>JSON.parse(JSON.stringify(o));
+function cfg(k){if(!CFG[k])CFG[k]=clone(DEF[k]);return CFG[k]}
+function saveCfg(){try{localStorage.setItem('cal27-cfg',JSON.stringify(CFG))}catch(e){}}
+const L=c=>(c.loja||'').trim()||lj();
+const hex2rgb=h=>{h=(h||'#3ddc97').replace('#','');if(h.length===3)h=h.split('').map(x=>x+x).join('');const n=parseInt(h,16);return[n>>16&255,n>>8&255,n&255]};
+const mix=(a,b,t)=>{const A=hex2rgb(a),B=hex2rgb(b);return 'rgb('+A.map((v,i)=>Math.round(v*t+B[i]*(1-t))).join(',')+')'};
+const onAc=h=>{const[r,g,b]=hex2rgb(h);return (r*299+g*587+b*114)/1000>150?'#06130D':'#FFFFFF'};
+function paint(el,c){el.style.setProperty('--ac',c.cor);el.style.setProperty('--acd',mix(c.cor,'#0C0C0D',.12));el.style.setProperty('--acl',mix(c.cor,'#0C0C0D',.4));el.style.setProperty('--on',onAc(c.cor))}
+function waLink(c,txt){let d=(c.wpp||'').replace(/\D/g,'');if(d.length===10||d.length===11)d='55'+d;return 'https://wa.me/'+d+'?text='+encodeURIComponent(txt)}
+function waBtn(c,txt,lab){return `<a class="btn wa" target="_blank" rel="noopener" href="${waLink(c,txt)}">${ICO.wa.replace('<svg','<svg width="18" height="18"')}${lab||'Resgatar no WhatsApp'}</a>`}
+
+const R={
+roleta(el,c){
+  const q=s=>el.querySelector(s),P=c.premios.map(x=>(x||'').trim()||'—'),n=P.length,seg=360/n,r=150,C=150,alt=mix(c.cor,'#0C0C0D',.2),on=onAc(c.cor);
+  const pt=a=>[C+r*Math.sin(a*Math.PI/180),C-r*Math.cos(a*Math.PI/180)];let s='';
+  P.forEach((p,i)=>{const a0=i*seg,[x0,y0]=pt(a0),[x1,y1]=pt(a0+seg),mid=a0+seg/2;
+    s+=`<path d="M${C} ${C}L${x0} ${y0}A${r} ${r} 0 0 1 ${x1} ${y1}Z" fill="${i%2?alt:c.cor}" stroke="#0C0C0D" stroke-width="2"/>`;
+    s+=`<g transform="rotate(${mid} ${C} ${C})"><text x="${C}" y="${C-r*.62}" text-anchor="middle" font-family="Inter Tight,sans-serif" font-weight="800" font-size="${p.length>11?12:15}" fill="${i%2?c.cor:on}">${esc(p)}</text></g>`});
+  let rot=0;const tok=el._tok=(el._tok||0)+1;
+  el.innerHTML=`<div class="stitle">${esc(L(c))}</div><div class="sname">${esc(c.titulo)}</div><div class="wheel"><div class="pin"></div><svg class="w" viewBox="0 0 300 300"><circle cx="150" cy="150" r="149" fill="#0C0C0D"/>${s}</svg><div class="hub" style="cursor:pointer">GIRAR</div></div><div class="result"><span>Toque em girar</span></div><button class="btn p sp">Girar a roleta</button>`;
+  const spin=()=>{const b=q('.sp');if(!b||b.disabled)return;b.disabled=true;q('.result').innerHTML='<span>Girando...</span>';
+    const i=Math.floor(Math.random()*n),t=360-(i*seg+seg/2);rot+=360*6+((t-rot%360)+360)%360;q('svg.w').style.transform=`rotate(${rot}deg)`;
+    setTimeout(()=>{if(el._tok!==tok)return;q('.result').innerHTML=`<b>Você ganhou ${esc(P[i])}!</b><span>Válido por ${esc(c.validade)} na ${esc(L(c))}</span>`;b.outerHTML=waBtn(c,`Oi! Ganhei ${P[i]} na roleta da ${L(c)} 🎉`)},5100)};
+  q('.sp').onclick=spin;q('.hub').onclick=spin;
+},
+raspadinha(el,c){
+  const q=s=>el.querySelector(s);el._tok=(el._tok||0)+1;
+  el.innerHTML=`<div class="stitle">${esc(c.tema)} · ${esc(L(c))}</div><div class="sname">${esc(c.titulo)}</div><div class="scr" style="background:linear-gradient(135deg,${mix(c.cor,'#0C0C0D',.3)},${mix(c.cor,'#0C0C0D',.12)});border-color:${mix(c.cor,'#0C0C0D',.45)}"><div class="prz"><small>Você ganhou</small><b>${esc(c.premio)}</b>${c.codigo?`<span>${esc(c.codigo)}</span>`:''}</div><canvas></canvas></div><div class="result"><span>Use o dedo ou o mouse para raspar</span></div><button class="btn s ag">Raspar de novo</button>`;
+  const setup=()=>{const cv=q('canvas'),box=q('.scr');if(!cv)return;const dpr=window.devicePixelRatio||1,w=box.clientWidth,h=box.clientHeight;cv.width=w*dpr;cv.height=h*dpr;cv.style.opacity=1;cv.style.pointerEvents='';const x=cv.getContext('2d');x.scale(dpr,dpr);
+    const g=x.createLinearGradient(0,0,w,h);g.addColorStop(0,'#77777f');g.addColorStop(.5,'#a7a7ae');g.addColorStop(1,'#66666d');x.fillStyle=g;x.fillRect(0,0,w,h);
+    x.fillStyle='rgba(255,255,255,.18)';for(let i=0;i<220;i++)x.fillRect(Math.random()*w,Math.random()*h,2,2);
+    x.fillStyle='#2b2b30';x.font='800 20px Inter Tight, sans-serif';x.textAlign='center';x.fillText('RASPE AQUI',w/2,h/2+7);
+    x.globalCompositeOperation='destination-out';let down=false,done=false,cnt=0;
+    const pos=e=>{const r=cv.getBoundingClientRect();return[e.clientX-r.left,e.clientY-r.top]};
+    const check=()=>{if(done)return;const d=x.getImageData(0,0,cv.width,cv.height).data;let t=0,k=0;for(let i=3;i<d.length;i+=64){t++;if(d[i]===0)k++}
+      if(k/t>.5){done=true;cv.style.opacity=0;cv.style.pointerEvents='none';q('.result').innerHTML=`<b>${esc(c.premio)} para você!</b><span>${c.codigo?'Cupom '+esc(c.codigo)+' · ':''}válido por ${esc(c.validade)}</span>`;if(!q('.wa'))q('.result').insertAdjacentHTML('afterend',waBtn(c,`Oi! Ganhei ${c.premio} na raspadinha da ${L(c)}${c.codigo?' (cupom '+c.codigo+')':''} 🎁`))}};
+    const scr=e=>{if(!down||done)return;const[px,py]=pos(e);x.beginPath();x.arc(px,py,22,0,Math.PI*2);x.fill();if(++cnt%8===0)check()};
+    cv.onpointerdown=e=>{down=true;try{cv.setPointerCapture(e.pointerId)}catch(_){}scr(e)};cv.onpointermove=scr;cv.onpointerup=cv.onpointercancel=()=>{down=false;check()};
+  };
+  requestAnimationFrame(setup);
+  q('.ag').onclick=()=>{const w=q('.wa');if(w)w.remove();q('.result').innerHTML='<span>Use o dedo ou o mouse para raspar</span>';setup()};
+},
+contagem(el,c){
+  const q=s=>el.querySelector(s);el._tok=(el._tok||0)+1;const tgt=new Date(c.data);
+  el.innerHTML=`<div class="stitle">${esc(c.evento)} · ${esc(L(c))}</div><div class="sname">Faltam para ${esc(c.evento)}</div><div class="cd"><div><b class="d">0</b><span>dias</span></div><div><b class="h">0</b><span>horas</span></div><div><b class="m">0</b><span>min</span></div><div><b class="s">0</b><span>seg</span></div></div><p style="color:var(--mut);text-align:center;max-width:340px;font-size:15px">${esc(c.oferta)}</p><div class="vip"><input placeholder="Seu WhatsApp" inputmode="tel"><button class="btn p">${esc(c.botao)}</button></div>`;
+  const tick=()=>{if(!q('.d'))return;let s=Math.max(0,Math.floor((tgt-new Date())/1000));if(isNaN(s))s=0;if(s===0&&tgt<new Date()){q('.sname').textContent=c.evento+' começou!'}
+    const d=Math.floor(s/86400);s%=86400;const h=Math.floor(s/3600);s%=3600;const m=Math.floor(s/60);s%=60;const p=v=>String(v).padStart(2,'0');
+    q('.d').textContent=d;q('.h').textContent=p(h);q('.m').textContent=p(m);q('.s').textContent=p(s)};
+  tick();el._t=setInterval(tick,1000);
+  q('.vip button').onclick=()=>{const v=q('.vip input').value.trim();if(v.replace(/\D/g,'').length<10){toast('Digite um WhatsApp com DDD');return}
+    q('.vip').outerHTML=`<div class="result"><b>${esc(c.sucesso)}</b></div>${waBtn(c,`Oi! Quero entrar na lista VIP de ${c.evento} da ${L(c)}. Meu número: ${v}`,'Confirmar no WhatsApp')}`};
+},
+quiz(el,c){
+  const q=s=>el.querySelector(s);el._tok=(el._tok||0)+1;let step=0,sc=[0,0,0];
+  const draw=()=>{
+    if(step<c.q.length){const Q=c.q[step];
+      el.innerHTML=`<div class="qz"><div class="stitle" style="text-align:left">${esc(c.titulo)}</div><div class="qbar"><i style="width:${step/c.q.length*100}%"></i></div><div style="color:var(--dim);font-size:13px">Pergunta ${step+1} de ${c.q.length}</div><div class="qq">${esc(Q.p)}</div>${Q.o.map((o,i)=>`<button class="qo" data-i="${i}">${esc(o)}</button>`).join('')}</div>`;
+      el.querySelectorAll('.qo').forEach(b=>b.onclick=()=>{sc[+b.dataset.i]++;step++;draw()});
+    }else{const w=sc.indexOf(Math.max(...sc)),r=c.r[w];
+      el.innerHTML=`<div class="qres"><div class="stitle">Seu resultado</div><div class="ttl">${esc(r.n)}</div><p style="color:var(--mut);max-width:320px">${esc(r.d)}</p><div class="prods">${r.p.split(',').map(x=>x.trim()).filter(Boolean).slice(0,3).map(x=>`<div><i></i>${esc(x)}</div>`).join('')}</div>${waBtn(c,`Fiz o quiz da ${L(c)} e deu: ${r.n}! Quero ver as peças 😍`,'Ver as peças no WhatsApp')}<button class="btn s ag">Refazer o quiz</button></div>`;
+      q('.ag').onclick=()=>{step=0;sc=[0,0,0];draw()};
+    }};
+  draw();
+},
+cartao(el,c){
+  const q=s=>el.querySelector(s);el._tok=(el._tok||0)+1;const vals=c.valores.split(',').map(x=>x.replace(/\D/g,'')).filter(Boolean);let val=vals[Math.min(1,vals.length-1)]||'';
+  el.innerHTML=`<div class="stitle">${esc(c.ocasiao)} · ${esc(L(c))}</div><div class="gcard"><div class="to">Para ${esc(c.para)}</div><div class="ms">${esc(c.msg)}</div><div class="ft"><span>Com carinho,<br><b class="gDe">Seu nome</b></span><span class="vale">Vale R$${val} · ${esc(L(c))}</span></div></div><div class="cform"><div class="two"><input class="iTo" placeholder="Para (ex.: ${esc(c.para)})" maxlength="22"><input class="iDe" placeholder="De (seu nome)" maxlength="22"></div><textarea class="iMs" rows="2" maxlength="120" placeholder="Escreva sua mensagem"></textarea><div class="two">${vals.map(v=>`<button class="chip ${v===val?'on':''}" data-v="${v}">R$${v}</button>`).join('')}</div></div><button class="btn p send">Enviar cartão</button>`;
+  const up=()=>{q('.to').textContent='Para '+(q('.iTo').value.trim()||c.para);q('.gDe').textContent=q('.iDe').value.trim()||'Seu nome';q('.ms').textContent=q('.iMs').value.trim()||c.msg;q('.vale').textContent=`Vale R$${val} · ${L(c)}`};
+  ['.iTo','.iDe','.iMs'].forEach(s=>q(s).oninput=up);
+  el.querySelectorAll('.cform .chip').forEach(b=>b.onclick=()=>{el.querySelectorAll('.cform .chip').forEach(x=>x.classList.remove('on'));b.classList.add('on');val=b.dataset.v;up()});
+  q('.send').onclick=()=>{q('.send').outerHTML=waBtn(c,`Quero enviar um cartão de ${c.ocasiao} com vale de R$${val} da ${L(c)} 💝`,'Finalizar no WhatsApp')};
+}
+};
+function mount(k,el,c){clearInterval(el._t);paint(el,c);R[k](el,c)}
+
+/* ---------- FORMS ---------- */
+const SW=['#3ddc97','#e8c07d','#ff6b6b','#f472b6','#60a5fa','#a78bfa','#f5f5f4'];
+const getP=(o,p)=>p.split('.').reduce((a,k)=>a[k],o);
+const setP=(o,p,v)=>{const ks=p.split('.'),last=ks.pop();ks.reduce((a,k)=>a[k],o)[last]=v};
+const F=(l,p,c,o={})=>`<label class="fl"><span>${l}</span>${o.area?`<textarea data-p="${p}" rows="2">${esc(String(getP(c,p)))}</textarea>`:`<input data-p="${p}" type="${o.t||'text'}" value="${esc(String(getP(c,p)))}"${o.ph?` placeholder="${esc(o.ph)}"`:''}>`}</label>`;
+const G=(t,h)=>`<div class="fg"><div class="fh">${t}</div>${h}</div>`;
+const COMMON=c=>G('Sua loja',F('Nome da loja','loja',c,{ph:lj()})+F('WhatsApp da loja (com DDD)','wpp',c,{ph:'31 99999-9999',t:'tel'})+`<label class="fl"><span>Cor principal</span><div class="cols">${SW.map(s=>`<button type="button" class="sw ${c.cor.toLowerCase()===s?'on':''}" data-sw="${s}" style="background:${s}"></button>`).join('')}<input type="color" data-p="cor" value="${c.cor}" title="Outra cor"></div></label>`);
+const FORMS={
+roleta:c=>COMMON(c)+G('Roleta',F('Título','titulo',c)+F('Validade do prêmio','validade',c)+`<div class="f2">${c.premios.map((_,i)=>F('Prêmio '+(i+1),'premios.'+i,c)).join('')}</div>`),
+raspadinha:c=>COMMON(c)+G('Raspadinha',F('Data ou tema','tema',c)+F('Título','titulo',c)+`<div class="f2">${F('Prêmio','premio',c)+F('Código do cupom','codigo',c)}</div>`+F('Validade','validade',c)),
+contagem:c=>COMMON(c)+G('Contagem regressiva',F('Nome do evento','evento',c,{ph:'Ex.: Dia dos Pais'})+F('Data e hora de início','data',c,{t:'datetime-local'})+F('Texto da oferta','oferta',c,{area:1})+F('Texto do botão','botao',c)+F('Mensagem depois do cadastro','sucesso',c,{area:1})),
+quiz:c=>COMMON(c)+G('Quiz',F('Título do quiz','titulo',c)+`<p class="fnote">A opção 1 de cada pergunta soma pontos para o resultado 1, a opção 2 para o resultado 2 e a opção 3 para o resultado 3.</p>`)+c.q.map((x,i)=>G('Pergunta '+(i+1),F('Pergunta',`q.${i}.p`,c)+x.o.map((_,j)=>F('Opção '+(j+1),`q.${i}.o.${j}`,c)).join(''))).join('')+c.r.map((x,i)=>G('Resultado '+(i+1),F('Nome','r.'+i+'.n',c)+F('Descrição','r.'+i+'.d',c,{area:1})+F('3 produtos (separados por vírgula)','r.'+i+'.p',c))).join(''),
+cartao:c=>COMMON(c)+G('Cartão',F('Data','ocasiao',c,{ph:'Ex.: Dia dos Pais'})+F('Para quem (padrão)','para',c)+F('Mensagem padrão','msg',c,{area:1})+F('Valores do vale (separados por vírgula)','valores',c))
+};
+
+/* ---------- LINK ---------- */
+const enc=o=>btoa(unescape(encodeURIComponent(JSON.stringify(o)))).replace(/\+/g,'-').replace(/\//g,'_').replace(/=+$/,'');
+const dec=s=>JSON.parse(decodeURIComponent(escape(atob(s.replace(/-/g,'+').replace(/_/g,'/')))));
+function makeLink(k){const c={...cfg(k)};if(!c.loja.trim())c.loja=lj();return location.href.split('#')[0].split('?')[0]+'#app='+k+'&c='+enc(c)}
+function openPlayer(k,c,preview){
+  const p=$('#player'),st=p.querySelector('.stage');p.classList.add('on');document.body.style.overflow='hidden';
+  p.querySelector('.pclose').style.display=preview?'':'none';p.querySelector('.pfoot').textContent=L(c);
+  paint(p,c);mount(k,st,c);
+}
+function closePlayer(){const p=$('#player');clearInterval(p.querySelector('.stage')._t);p.classList.remove('on');if(!$('#modal').classList.contains('on'))document.body.style.overflow=''}
+
+/* ---------- PROMPTS ---------- */
+const PR_SPEC={
+roleta:c=>`TIPO: Roleta de prêmios
+COMO FUNCIONA
+- Uma roleta circular com ${c.premios.length} fatias, alternando a cor principal e uma versão escura dela.
+- Um ponteiro fixo no topo. Ao tocar em "Girar", a roleta gira por cerca de 5 segundos com desaceleração suave e para em um prêmio sorteado.
+- O cliente só pode girar uma vez por visita (o botão some depois do giro).
+- Ao parar, aparece: "Você ganhou [prêmio]! Válido por ${c.validade} na ${L(c)}" e um botão verde "Resgatar no WhatsApp".
+CONTEÚDO
+- Título: "${c.titulo}"
+- Prêmios: ${c.premios.join(' | ')}
+- Validade: ${c.validade}`,
+raspadinha:c=>`TIPO: Raspadinha virtual
+COMO FUNCIONA
+- Um cartão com o prêmio escondido sob uma camada prateada com o texto "RASPE AQUI".
+- O cliente raspa com o dedo (celular) ou com o mouse. Use canvas para a camada prateada.
+- Quando mais da metade estiver raspada, a camada some com animação e aparece o prêmio, o código do cupom e um botão "Resgatar no WhatsApp".
+CONTEÚDO
+- Tema: ${c.tema}
+- Título: "${c.titulo}"
+- Prêmio: ${c.premio}
+- Código do cupom: ${c.codigo||'(sem código)'}
+- Validade: ${c.validade}`,
+contagem:c=>`TIPO: Contagem regressiva com lista VIP
+COMO FUNCIONA
+- Um relógio grande com dias, horas, minutos e segundos até ${c.evento}, atualizando a cada segundo.
+- Data e hora de início: ${c.data.replace('T',' às ')} (horário de Brasília).
+- Quando o tempo acabar, o título muda para "${c.evento} começou!".
+- Abaixo do relógio, o texto da oferta e um campo para o cliente digitar o WhatsApp, com o botão "${c.botao}".
+- Ao enviar, valide se tem DDD (10 ou 11 dígitos), mostre "${c.sucesso}" e um botão que abre o WhatsApp da loja com a mensagem "Quero entrar na lista VIP de ${c.evento}" e o número do cliente.
+CONTEÚDO
+- Evento: ${c.evento}
+- Oferta: ${c.oferta}`,
+quiz:c=>`TIPO: Quiz de estilo
+COMO FUNCIONA
+- Uma pergunta por tela, com barra de progresso e 3 opções em botões grandes.
+- A opção 1 de cada pergunta soma 1 ponto para o resultado 1, a opção 2 para o resultado 2 e a opção 3 para o resultado 3. Ganha o resultado com mais pontos.
+- A tela final mostra o nome do resultado, a descrição, 3 produtos em cartões e o botão "Ver as peças no WhatsApp", que envia o resultado para a loja.
+- Botão para refazer o quiz.
+CONTEÚDO
+- Título: "${c.titulo}"
+${c.q.map((x,i)=>`- Pergunta ${i+1}: ${x.p} → opções: ${x.o.join(' | ')}`).join('\n')}
+${c.r.map((x,i)=>`- Resultado ${i+1}: ${x.n} — ${x.d} Produtos: ${x.p}`).join('\n')}`,
+cartao:c=>`TIPO: Cartão de presente interativo
+COMO FUNCIONA
+- Um cartão elegante (fundo claro, tom de papel) que atualiza ao vivo enquanto o cliente digita: "Para", "De" e a mensagem (até 120 caracteres).
+- O cliente escolhe o valor do vale em botões: ${c.valores.split(',').map(v=>'R$'+v.trim()).join(', ')}. O valor aparece no canto do cartão como "Vale R$[valor] · ${L(c)}".
+- Botão "Enviar cartão", que abre o WhatsApp da loja com a mensagem "Quero enviar um cartão de ${c.ocasiao} com vale de R$[valor]".
+CONTEÚDO
+- Data: ${c.ocasiao}
+- Para (padrão): ${c.para}
+- Mensagem padrão: ${c.msg}`
+};
+function buildPrompt(k){const c=cfg(k),d=(c.wpp||'').replace(/\D/g,'');
+return `Crie uma página interativa para a loja "${L(c)}", que vende moda e calçados. A página vai ser enviada aos clientes pelo WhatsApp e pelo link da bio do Instagram, então precisa funcionar perfeitamente no celular.
+
+${PR_SPEC[k](c)}
+
+WHATSAPP
+- Todos os botões de WhatsApp abrem https://wa.me/${d?(d.length<=11?'55'+d:d):'55DDDNUMERO'} com a mensagem já escrita (use encodeURIComponent).
+
+VISUAL
+- Cor principal: ${c.cor}. Use em botões, destaques e detalhes. Crie uma versão escura dela para fundos de apoio.
+- Fundo escuro quase preto (#0C0C0D), textos claros, cantos bem arredondados e sombras suaves. Visual premium, de loja de moda.
+- Nome da loja no topo, em letras maiúsculas espaçadas, na cor principal.
+- Fontes do Google Fonts: Inter Tight para textos e Instrument Serif itálica para destaques.
+- Animações suaves ao aparecer o resultado. Nada piscando ou exagerado.
+
+REGRAS TÉCNICAS
+- Um único arquivo HTML, com o CSS e o JavaScript dentro dele. Sem bibliotecas externas além das fontes.
+- Pensado primeiro para celular (telas a partir de 360px de largura) e bonito também no computador.
+- Sem cadastro, sem login e sem banco de dados.
+- Textos em português do Brasil.
+- Entregue o código completo, pronto para publicar.
+
+No final, publique a página e me dê o link para compartilhar.`}
+
+/* ---------- MODAL ---------- */
+function closeApp(){$('#modal').classList.remove('on');clearInterval($('#stage')._t);$('#stage')._tok=-1;document.body.style.overflow=''}
+$('#modal').addEventListener('click',e=>{if(e.target.id==='modal')closeApp()});
+document.addEventListener('keydown',e=>{if(e.key==='Escape'){if($('#player').classList.contains('on')&&!document.body.classList.contains('player'))closePlayer();else closeApp()}});
+let CUR=null,RT=null;
+function openApp(k){
+  const a=APPS[k],c=cfg(k);CUR=k;
+  $('#info').innerHTML=`<button class="x" onclick="closeApp()" aria-label="Fechar">${ICO.x}</button><span class="pill" style="align-self:flex-start">App interativo</span><h3>${a.t}</h3>
+  <div class="itabs"><button data-it="usar" class="on">Como usar</button><button data-it="edit">Personalizar</button><button data-it="ia">Prompt para IA</button></div>
+  <div class="ip" data-ip="usar"><p>${a.d}</p><ol>${a.h.map(x=>`<li>${x}</li>`).join('')}</ol><div style="display:flex;gap:6px;flex-wrap:wrap">${a.u.map(u=>`<span class="pill n">${u}</span>`).join('')}</div><button class="btn p" data-goit="edit">Personalizar para a minha loja ${ICO.ar}</button></div>
+  <div class="ip" data-ip="edit" hidden><div class="frm">${FORMS[k](c)}</div>
+    <div class="linkbox"><div class="fh">Seu link pronto</div><p>O link guarda tudo o que você personalizou. Mande no WhatsApp, coloque na bio ou nos stories.</p><div class="lrow"><button class="btn p" id="mkLink">${ICO.cp}Gerar e copiar link</button><button class="btn s" id="pvLink">Ver como o cliente vê</button></div><input class="lout" id="lout" readonly hidden><button class="rst" id="rst">Restaurar o padrão</button></div></div>
+  <div class="ip" data-ip="ia" hidden><p>Quer montar do seu jeito? Este prompt já vem com tudo o que você escolheu em "Personalizar". É só copiar e colar.</p><div class="prm" id="prm"></div><button class="btn p" id="cpPrm">${ICO.cp}Copiar prompt</button>
+    <div class="fh" style="margin-top:6px">Cole em uma destas (todas têm plano grátis)</div><div class="plats"><a href="https://claude.ai" target="_blank" rel="noopener">Claude</a><a href="https://gemini.google.com" target="_blank" rel="noopener">Gemini</a><a href="https://lovable.dev" target="_blank" rel="noopener">Lovable</a></div></div>`;
+  const it=t=>{$$('#info .itabs button').forEach(b=>b.classList.toggle('on',b.dataset.it===t));$$('#info .ip').forEach(p=>p.hidden=p.dataset.ip!==t);if(t==='ia')$('#prm').textContent=buildPrompt(k)};
+  $$('#info .itabs button').forEach(b=>b.onclick=()=>it(b.dataset.it));$('#info [data-goit]').onclick=()=>it('edit');
+  const re=()=>{clearTimeout(RT);RT=setTimeout(()=>{saveCfg();mount(k,$('#stage'),c);$('#lout').hidden=true},220)};
+  $('#info').oninput=e=>{const p=e.target.dataset.p;if(!p)return;setP(c,p,e.target.value);if(p==='cor')$$('#info .sw').forEach(s=>s.classList.toggle('on',s.dataset.sw===e.target.value.toLowerCase()));re()};
+  $('#info').onclick=e=>{const s=e.target.closest('[data-sw]');if(!s)return;c.cor=s.dataset.sw;$('#info input[data-p="cor"]').value=c.cor;$$('#info .sw').forEach(x=>x.classList.toggle('on',x===s));re()};
+  $('#mkLink').onclick=()=>{const l=makeLink(k),o=$('#lout');o.value=l;o.hidden=false;copyTxt(l,null,'Link copiado')};
+  $('#pvLink').onclick=()=>openPlayer(k,c,true);
+  $('#cpPrm').onclick=()=>copyTxt(buildPrompt(k),$('#cpPrm'),'Prompt copiado');
+  $('#rst').onclick=()=>{CFG[k]=clone(DEF[k]);saveCfg();openApp(k);it('edit')};
+  $('#modal').classList.add('on');document.body.style.overflow='hidden';
+  mount(k,$('#stage'),c);
+}
+/* player mode (link aberto pelo cliente) */
+(function(){const h=location.hash.slice(1);if(!h.startsWith('app='))return;const ps=new URLSearchParams(h);const k=ps.get('app');let c;try{c={...DEF[k],...dec(ps.get('c'))}}catch(e){return}if(!R[k])return;document.body.classList.add('player');openPlayer(k,c,false);document.title=(c.loja||'')+' · '+APPS[k].t})();
+
+/* ---------- ESTRATÉGIAS ---------- */
+const ESTR=[
+{k:'live',t:'Live shop',s:'Venda ao vivo no Instagram, com pedido direto no WhatsApp.',q:'Semana do Dia das Mães, Namorados, esquenta da Black e Natal.',m:[4,5,10,11],
+p:['Escolha de 15 a 20 peças com grade boa. Separe na arara na ordem em que vai mostrar.','Divulgue 5 dias antes: contagem regressiva nos stories e um disparo para a base.','Abra a live com a oferta da live (frete grátis, brinde ou 10% só para quem comprar ao vivo).','Mostre cada peça no corpo por 2 a 3 minutos: preço, numeração e com o que combina.','Peça para comentar "QUERO + número". Uma pessoa da equipe chama cada comentário no WhatsApp na hora.','No dia seguinte, mande as peças da live para quem não assistiu, com a oferta valendo por 24 horas.'],
+msg:[['Convite','[nome], dia [data] às [hora] tem LIVE na {loja} 🔴✨\n\nVou mostrar as novidades ao vivo e quem comprar durante a live ganha [benefício] 🎁\n\nAtiva o lembrete no nosso Instagram e me responde "EU VOU" que eu te aviso quando começar 😉'],['Pós-live','[nome], você perdeu a live de ontem? 😱\n\nSeparei as peças que mais saíram e a oferta da live ainda vale até hoje às [hora] ⏰\n\nQuer que eu te mande as fotos?']],
+c:['Celular no tripé e carregado','Luz de frente (janela ou ring light)','Internet testada','Peças na arara, na ordem','Tabela de preços e numeração à mão','Duas pessoas: uma apresenta, outra atende no WhatsApp']},
+{k:'vip',t:'Grupo VIP',s:'Grupo de WhatsApp só para clientes, com acesso antes e ofertas exclusivas.',q:'Abra 2 a 3 semanas antes da Black Friday e das liquidações. Pode ficar aberto o ano todo.',m:[5,6,9,10],
+p:['Crie o grupo e deixe só os administradores enviando mensagens.','Convide a base com uma vantagem clara: comprar antes, cupom extra ou brinde garantido.','Coloque as regras na descrição: o que a pessoa recebe e com que frequência.','Aqueça com 3 a 4 posts por semana: bastidores, enquete, prévia de peça e contagem regressiva.','Na véspera, libere o acesso antecipado só no grupo (cupom ou link) por 24 horas.','Depois da data, mantenha o grupo com uma novidade por semana ou arquive e avise.'],
+msg:[['Convite','[nome], vou abrir um grupo VIP da {loja} para a Black Friday 🖤\n\nQuem está lá dentro:\n✅ compra 24h antes de todo mundo\n✅ ganha um cupom extra\n✅ vê as peças antes de chegar na loja\n\nAs vagas são limitadas. Quer entrar? Me responde "VIP" 👇'],['Boas-vindas','Bem-vinda ao Grupo VIP da {loja}! 💚\n\nAqui você recebe:\n✨ acesso antecipado às promoções\n🎁 cupons que não vão para mais ninguém\n👀 novidades em primeira mão\n\nSó a gente manda mensagem aqui, pra não lotar seu celular. Fica de olho que dia [data] tem surpresa 😉']],
+c:['Grupo com envio só de administradores','Descrição com as regras','Foto e nome do grupo com a marca da loja','Vantagem do VIP definida','Calendário de posts até a data']},
+{k:'bazar',t:'Bazar secreto',s:'Evento fechado, só para convidados, com peças paradas a preço de bazar.',q:'Fevereiro (depois da liquidação de verão), agosto (depois do inverno) ou quando o estoque parado pesar.',m:[1,7],
+p:['Separe as peças paradas e as grades quebradas. Só elas entram no bazar.','Defina o desconto por faixa (ex.: 40%, 50% e 60%) e as regras: sem troca, pagamento à vista ou Pix.','Escolha o horário: depois do expediente ou num dia em que a loja abre só para o bazar.','Convide só a lista VIP e quem comprou nos últimos 12 meses. O convite tem uma senha.','Organize as peças por numeração para a cliente achar rápido.','Limite as vagas ou o tempo (ex.: das 19h às 22h). O que sobrar vai para a próxima live.'],
+msg:[['Convite','[nome], você foi escolhida para o BAZAR SECRETO da {loja} 🤫\n\n📅 [data], das [hora] às [hora]\n🏷️ peças com até [X]% OFF\n🔑 senha de entrada: [SENHA]\n\nÉ só para convidadas e as vagas são poucas. Confirma sua presença? 👇'],['Lembrete','É HOJE, [nome]! 🤫🔥\n\nO Bazar Secreto começa às [hora]. Não esquece a senha: [SENHA]\n\nAs melhores peças saem nos primeiros 30 minutos 😉']],
+c:['Peças separadas e etiquetadas','Regras do bazar definidas','Lista de convidadas','Senha do convite','Peças organizadas por número','Maquininha e Pix prontos']}
+];
+function renderEstr(){
+  $('#elist').innerHTML=ESTR.map(e=>`<details class="card est" ${e.k==='live'?'open':''}><summary><div><span class="pill">${e.t}</span><h3>${e.s}</h3></div><span class="tg">+</span></summary>
+  <div class="eb"><div class="when"><b>Quando usar</b><p>${e.q}</p><div class="mchips2">${e.m.map(i=>`<button class="chip" onclick="go('calendario');setCal('mes');selMonth(${i})">${MESES[i].n}</button>`).join('')}</div></div>
+  <div class="lb2">Passo a passo</div><ol class="steps2">${e.p.map(x=>`<li>${x}</li>`).join('')}</ol>
+  <div class="lb2">Mensagens prontas</div><div class="msgs2">${e.msg.map(([l,t])=>{const tx=fill(t);return `<div class="card msg"><span class="pill n" style="align-self:flex-start">${l}</span><div class="bubble">${esc(tx)}</div><button class="copy" data-t="${esc(tx)}">${ICO.cp}Copiar</button></div>`}).join('')}</div>
+  <div class="lb2">Checklist</div><ul class="chk">${e.c.map(x=>`<li><label><input type="checkbox"> ${x}</label></li>`).join('')}</ul></div></details>`).join('');
+  $$('#elist .copy').forEach(b=>b.onclick=()=>copyTxt(b.dataset.t,b));
+}
+
+/* ---------- VENDER MAIS ---------- */
+const brl=v=>v.toLocaleString('pt-BR',{style:'currency',currency:'BRL',maximumFractionDigits:0});
+function calc(){
+  const F=+$('#cF').value||0,V=+$('#cV').value||0,P=+$('#cP').value||0;
+  if(!F||!V||!P){$('#kT').textContent=$('#kP').textContent=$('#kM').textContent='—';$('#kG').textContent='—';$('#kG2').textContent='Preencha os três campos.';return}
+  const tk=F/V,pa=P/V,pm=F/P,novo=V*(pa+.2)*pm,gain=novo-F;
+  $('#kT').textContent=brl(tk);$('#kP').textContent=pa.toLocaleString('pt-BR',{maximumFractionDigits:2});$('#kM').textContent=brl(pm);
+  $('#kG').textContent='+'+brl(gain)+' no mês';
+  $('#kG2').innerHTML=`O PA vai de ${pa.toLocaleString('pt-BR',{maximumFractionDigits:2})} para <b>${(pa+.2).toLocaleString('pt-BR',{maximumFractionDigits:2})}</b> e o ticket médio sobe para <b>${brl(tk+.2*pm)}</b>, com o mesmo número de clientes. Em 12 meses: <b>${brl(gain*12)}</b>.`;
+}
+['#cF','#cV','#cP'].forEach(s=>$(s).addEventListener('input',calc));calc();
+const TF={all:'Todas',pa:'Aumentar PA',tk:'Aumentar ticket',am:'Os dois'};let TSEL='all';
+function renderTac(){
+  $('#vfilter').innerHTML=Object.entries(TF).map(([k,v])=>`<button class="chip ${TSEL===k?'on':''}" data-k="${k}">${v}</button>`).join('');
+  $$('#vfilter .chip').forEach(b=>b.onclick=()=>{TSEL=b.dataset.k;renderTac()});
+  $('#tgrid').innerHTML=TAC.map((t,i)=>({...t,i})).filter(t=>TSEL==='all'||t.k===TSEL).map(t=>`<div class="card tac"><div class="th"><div><span class="pill ${t.k==='tk'?'n':''}">${t.k==='pa'?'PA':t.k==='tk'?'Ticket médio':'PA + ticket'}</span><h3 style="margin-top:12px">${t.t}</h3></div><span class="n">${String(t.i+1).padStart(2,'0')}</span></div><p>${t.p}</p><div class="how">${t.h}</div><div class="sc">${esc(t.s)}</div></div>`).join('');
+}
+renderTac();
+renderEstr();
+renderHome();
+</script>
+</body>
+</html>
