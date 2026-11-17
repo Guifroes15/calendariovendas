@@ -340,6 +340,43 @@ footer{color:var(--dim);border-top:1px solid var(--line)}
 }
 @media(max-width:560px){.demo{--fs:calc((min(100vw - 44px,330px) - 28px)/21.6)}}
 @media(prefers-reduced-motion:reduce){.col>.glass,.col>.gdark{animation:none}.scn,.d-card,.tap,.wo,.wi{transition:none}}
+
+/* ===== ajustes para celular ===== */
+.apps-strip{display:none}
+@media(max-width:760px){
+  section.l{padding:60px 0}
+  .hc{padding-top:22px}
+  .hc h1{margin-top:18px}
+  .hc .ctaw{margin-top:24px}
+  .stage{margin-top:34px;display:block}
+  .ph{margin-bottom:0}
+  .demo{height:31em}
+  /* faixa de apps que arrasta para o lado */
+  .apps-strip{display:block;position:relative;z-index:3;margin:26px -22px 0}
+  .apps-strip .ah{display:flex;justify-content:space-between;align-items:baseline;padding:0 22px;margin-bottom:12px}
+  .apps-strip .ah b{font-size:15px;color:var(--tx)}
+  .apps-strip .ah span{font-size:13px;color:var(--ac);font-weight:600}
+  .apps-strip .row{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;padding:4px 22px 18px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .apps-strip .row::-webkit-scrollbar{display:none}
+  .apps-strip .row>*{flex:none;width:250px;scroll-snap-align:center;align-self:stretch}
+  .apps-strip .c-rol{align-items:center}
+  .apps-strip .wheel{width:150px;height:150px}
+  .apps-strip .c-cd{justify-content:center}
+  .apps-strip .c-ct{display:flex;align-items:center}
+  .apps-strip .c-ct .gc{width:100%}
+  /* o que tem dentro: linhas compactas */
+  .feat{gap:10px;margin-top:30px}
+  .fc{display:grid;grid-template-columns:44px 1fr;column-gap:14px;row-gap:2px;align-items:center;padding:16px 18px;border-radius:18px}
+  .fc .ic{grid-row:1/3;width:44px;height:44px;margin:0}
+  .fc .ic svg{width:20px;height:20px}
+  .fc b{font-size:16px;align-self:end}
+  .fc span{font-size:13.5px;align-self:start;line-height:1.4}
+  /* oferta: direto ao ponto */
+  .mock{display:none}
+  .offwrap{margin-top:28px}
+  /* barra fixa não cobre o rodapé */
+  body{padding-bottom:84px}
+}
 </style>
 <!-- Meta Pixel Code -->
 <script>
@@ -415,6 +452,7 @@ src="https://www.facebook.com/tr?id=1700067961723571&ev=PageView&noscript=1"
   </div>
 </header>
 
+<div class="wrap apps-strip" id="appsStrip" aria-label="Apps que vêm junto"><div class="ah"><b>Apps que vêm junto</b><span>arraste →</span></div><div class="row"></div></div>
 <section class="l" id="dentro"><div class="wrap">
   <div class="lt-h"><span class="lab">O que tem dentro</span><h2>Tudo pronto para sua loja <span class="serif">vender o ano inteiro.</span></h2><p>Abre no celular, mostra o que fazer hoje e já entrega a mensagem e o app para usar.</p></div>
   <div class="feat">
@@ -491,6 +529,15 @@ src="https://www.facebook.com/tr?id=1700067961723571&ev=PageView&noscript=1"
 
 <script>
 const $=s=>document.querySelector(s);
+/* celular: cartões de apps viram uma faixa que arrasta para o lado */
+(()=>{const strip=$('#appsStrip'),row=strip&&strip.querySelector('.row');if(!row)return;
+  const cards=[...document.querySelectorAll('.stage .col>.glass,.stage .col>.gdark')].filter(c=>!c.classList.contains('skel'));
+  const home=cards.map(c=>[c,c.parentNode,c.nextSibling]);
+  const mq=matchMedia('(max-width:760px)');
+  const order=['c-rol','c-cd','c-scr','c-qz','c-ct'];
+  const apply=()=>{if(mq.matches){order.forEach(k=>{const c=cards.find(x=>x.classList.contains(k));if(c)row.appendChild(c)})}else{home.forEach(([c,par,nx])=>par.insertBefore(c,nx&&nx.parentNode===par?nx:null))}};
+  apply();mq.addEventListener('change',apply);
+})();
 const CHECKOUT='https://pay.kiwify.com.br/z6mly71';document.querySelectorAll('[data-buy]').forEach(a=>a.href=CHECKOUT);
 /* Meta Pixel: eventos dos botões de compra */
 const PRODUTO={content_name:'Calendário 2027 · Moda & Calçados',content_ids:['calendario-2027'],content_type:'product',value:47,currency:'BRL'};
