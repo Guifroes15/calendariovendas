@@ -163,7 +163,7 @@ section.l{padding:90px 0}
 @media(max-width:760px){.vs{grid-template-columns:1fr}}
 .vc{border-radius:28px;padding:32px;background:#fff}
 .vc .tg{font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--ink2)}
-.vc .big{font-size:42px;font-weight:800;letter-spacing:-.04em;margin-top:6px}
+.vc .big{font-size:clamp(30px,8.4vw,42px);font-weight:800;letter-spacing:-.04em;margin-top:6px}
 .vc ul{list-style:none;display:flex;flex-direction:column;gap:14px;margin-top:20px}
 .vc li{display:flex;gap:12px;font-size:16px}
 .vc svg{width:20px;height:20px;flex:none;margin-top:2px}
@@ -183,6 +183,7 @@ section.l{padding:90px 0}
 .offer li svg{width:20px;height:20px;color:var(--ac);flex:none;margin-top:2px}
 .price{font-size:clamp(80px,13vw,112px);font-weight:800;letter-spacing:-.06em;line-height:1;position:relative}
 .price small{font-size:28px;vertical-align:top;margin-right:4px}
+.price small.cents{font-size:.4em;letter-spacing:-.04em;margin:0 0 0 2px}
 .offer .sub{color:var(--mut);position:relative}
 .offer .cta{margin-top:26px;width:100%;justify-content:space-between;position:relative}
 @media(max-width:560px){.offer{padding:30px 22px}}
@@ -278,11 +279,11 @@ footer{color:var(--dim);border-top:1px solid var(--line)}
 .m-chat span{font-size:11.5px;line-height:1.4;padding:9px 11px;border-radius:12px}
 .m-chat .o{background:#14533A;align-self:flex-end}.m-chat .i{background:#1E2723;align-self:flex-start}
 .m-seal{position:absolute;right:6%;bottom:6%;width:124px;height:124px;border-radius:50%;background:var(--ac);color:#06130D;display:flex;flex-direction:column;align-items:center;justify-content:center;transform:rotate(-10deg);box-shadow:0 20px 50px rgba(61,220,151,.4);z-index:4}
-.m-seal b{font-size:34px;font-weight:800;letter-spacing:-.05em;line-height:1}.m-seal span{font-size:13px;font-weight:700}
+.m-seal b{font-size:27px;font-weight:800;letter-spacing:-.05em;line-height:1}.m-seal span{font-size:13px;font-weight:700}
 .m-chip{position:absolute;z-index:4;padding:9px 15px;border-radius:999px;background:rgba(20,20,22,.92);border:1px solid var(--line);font-size:13px;font-weight:700;color:var(--tx);box-shadow:0 14px 30px rgba(0,0,0,.4)}
 .m-chip:before{content:"";display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--ac);margin-right:8px;vertical-align:middle}
 .c1{left:10%;top:4%}.c2{left:-4%;top:46%}.c3{right:0;top:52%}.c4{left:6%;top:24%}
-@media(max-width:560px){.m-rol{width:130px;padding:10px}.m-rol svg{width:90px;height:90px}.m-chat{width:190px}.m-seal{width:96px;height:96px}.m-seal b{font-size:26px}.c2,.c4{display:none}.c1{top:0;left:2%}}
+@media(max-width:560px){.m-rol{width:130px;padding:10px}.m-rol svg{width:90px;height:90px}.m-chat{width:190px}.m-seal{width:96px;height:96px}.m-seal b{font-size:20px}.c2,.c4{display:none}.c1{top:0;left:2%}}
 
 /* demo animada no celular */
 .screen.dm{padding:0;display:block;min-height:0;overflow:hidden;gap:0}
@@ -407,7 +408,7 @@ src="https://www.facebook.com/tr?id=1700067961723571&ev=PageView&noscript=1"
   <svg class="deco" viewBox="0 0 200 200" aria-hidden="true"><path d="M180 30 C 90 10, 20 70, 40 170" fill="none" stroke="#3DDC97" stroke-width="2" stroke-dasharray="6 8"/></svg>
   <div class="wrap hc">
     <div class="htxt"><span class="pill">Feito para lojas de <b>moda e calçados</b></span>
-    <h1>Pare de pagar caro em agência. <span class="serif">Seu 2027 planejado por R$47.</span></h1>
+    <h1>Pare de pagar caro em agência. <span class="serif">Seu 2027 planejado por R$27,90.</span></h1>
     <p class="sub">O que fazer em cada dia do ano, as mensagens prontas e os apps que fazem o cliente chamar no seu WhatsApp. Testado em mais de 100 lojas.</p>
     <div class="ctaw"><a class="cta" href="https://pay.kiwify.com.br/z6mly71" data-buy="topo">Quero meu planejamento <i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></i></a><small>Pagamento único · acesso na hora · +100 lojas atendidas</small></div></div>
 
@@ -474,7 +475,7 @@ src="https://www.facebook.com/tr?id=1700067961723571&ev=PageView&noscript=1"
       <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg>Mensalidade que não para</li>
       <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg>Você espera a reunião para saber o que fazer</li>
       <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg>Plano genérico, para qualquer segmento</li></ul></div>
-    <div class="vc good"><span class="tg">Calendário de Vendas 2027</span><div class="big">R$47 uma vez</div><ul>
+    <div class="vc good"><span class="tg">Calendário de Vendas 2027</span><div class="big">R$27,90 uma vez</div><ul>
       <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>O ano inteiro, pago uma vez só</li>
       <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Abre no celular e mostra o que fazer hoje</li>
       <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Feito só para moda e calçados</li></ul></div>
@@ -486,7 +487,7 @@ src="https://www.facebook.com/tr?id=1700067961723571&ev=PageView&noscript=1"
 </div></section>
 
 <section class="l" id="oferta" style="padding-top:20px"><div class="wrap">
-  <div class="lt-h"><span class="lab">Oferta</span><h2>Seu 2027 inteiro <span class="serif">por R$47.</span></h2></div>
+  <div class="lt-h"><span class="lab">Oferta</span><h2>Seu 2027 inteiro <span class="serif">por R$27,90.</span></h2></div>
   <div class="offwrap">
   <div class="mock" aria-hidden="true">
     <div class="m-chat"><span class="o">[nome], o Dia das Mães é dia 9/05. Quer sugestões de presente?</span><span class="i">Quero! Até R$200</span></div>
@@ -496,7 +497,7 @@ src="https://www.facebook.com/tr?id=1700067961723571&ev=PageView&noscript=1"
       <div class="m-grid"><i></i><i></i><i></i><i></i><span class="">1</span><span class="e">2</span><span class="">3</span><span class="d">4</span><span class="">5</span><span class="s">6</span><span class="">7</span><span class="d">8</span><span class="">9</span><span class="">10</span><span class="a">11</span><span class="">12</span><span class="d">13</span><span class="">14</span><span class="s">15</span><span class="">16</span><span class="">17</span><span class="">18</span><span class="">19</span><span class="d sel">20</span><span class="">21</span><span class="d">22</span><span class="">23</span><span class="">24</span><span class="s">25</span><span class="">26</span><span class="d">27</span><span class="">28</span><span class="">29</span><span class="a">30</span><span class="">31</span></div>
       <div class="m-det"><small>DISPARO · 20/01</small><b>Carnaval: chegaram as peças de bloco</b></div>
     </div></div>
-    <div class="m-seal"><b>R$47</b><span>uma vez</span></div>
+    <div class="m-seal"><b>R$27,90</b><span>uma vez</span></div>
     <span class="m-chip c1">Calendário</span><span class="m-chip c2">Disparos</span><span class="m-chip c3">5 apps</span><span class="m-chip c4">Estratégias</span>
   </div>
   <div class="offer">
@@ -507,7 +508,7 @@ src="https://www.facebook.com/tr?id=1700067961723571&ev=PageView&noscript=1"
       <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Live shop, grupo VIP e bazar secreto</li>
       <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Bônus: calculadora de PA e ticket médio</li>
     </ul>
-    <div class="price"><small>R$</small>47</div>
+    <div class="price"><small>R$</small>27<small class="cents">,90</small></div>
     <p class="sub">Pagamento único · acesso a 2027 inteiro</p>
     <a class="cta" href="https://pay.kiwify.com.br/z6mly71" id="buy" data-buy="oferta">Quero o meu agora <i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></i></a>
   </div>
@@ -525,7 +526,7 @@ src="https://www.facebook.com/tr?id=1700067961723571&ev=PageView&noscript=1"
 </div></section>
 
 <footer>Calendário de Vendas 2027 · Moda &amp; Calçados</footer>
-<div class="sticky" id="sticky"><b>Seu 2027 por R$47</b><a href="https://pay.kiwify.com.br/z6mly71" data-buy="barra-fixa">Quero o meu</a></div>
+<div class="sticky" id="sticky"><b>Seu 2027 por R$27,90</b><a href="https://pay.kiwify.com.br/z6mly71" data-buy="barra-fixa">Quero o meu</a></div>
 
 <script>
 const $=s=>document.querySelector(s);
@@ -540,7 +541,7 @@ const $=s=>document.querySelector(s);
 })();
 const CHECKOUT='https://pay.kiwify.com.br/z6mly71';document.querySelectorAll('[data-buy]').forEach(a=>a.href=CHECKOUT);
 /* Meta Pixel: eventos dos botões de compra */
-const PRODUTO={content_name:'Calendário 2027 · Moda & Calçados',content_ids:['calendario-2027'],content_type:'product',value:47,currency:'BRL'};
+const PRODUTO={content_name:'Calendário 2027 · Moda & Calçados',content_ids:['calendario-2027'],content_type:'product',value:27.90,currency:'BRL'};
 const px=(...a)=>{try{window.fbq&&fbq(...a)}catch(e){}};
 document.querySelectorAll('[data-buy]').forEach(a=>a.addEventListener('click',e=>{
   px('trackCustom','CliqueBotao',{botao:a.textContent.trim(),posicao:a.dataset.buy});
